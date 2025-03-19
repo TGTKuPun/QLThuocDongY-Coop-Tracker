@@ -43,7 +43,9 @@ namespace GUI
 
         private void btn_login_Click(object sender, EventArgs e)
         {
-
+            Menu form = new Menu();
+            this.Hide();
+            form.ShowDialog();
         }
     }
 }
