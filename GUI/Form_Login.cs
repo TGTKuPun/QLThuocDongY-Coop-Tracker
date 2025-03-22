@@ -43,9 +43,23 @@ namespace GUI
 
         private void btn_login_Click(object sender, EventArgs e)
         {
-            Menu form = new Menu();
-            this.Hide();
-            form.ShowDialog();
+            string username = txt_username.Text;
+            string password = txt_password.Text;
+
+            BUS_FormLogin busLogin = new BUS_FormLogin();
+
+            if (busLogin.checkLogin(username, password))
+            {
+                MessageBox.Show("Login successful!", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                this.Hide();
+                Menu menu = new Menu();
+                menu.ShowDialog();
+                this.Close();
+            }
+            else
+            {
+                MessageBox.Show("Invalid username or password!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
     }
 }

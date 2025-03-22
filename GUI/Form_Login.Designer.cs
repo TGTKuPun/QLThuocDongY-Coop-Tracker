@@ -90,7 +90,7 @@
             this.txt_username.IconRight = ((System.Drawing.Image)(resources.GetObject("txt_username.IconRight")));
             this.txt_username.IconRightOffset = new System.Drawing.Point(15, 0);
             this.txt_username.Location = new System.Drawing.Point(82, 148);
-            this.txt_username.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txt_username.Margin = new System.Windows.Forms.Padding(4);
             this.txt_username.Name = "txt_username";
             this.txt_username.PlaceholderForeColor = System.Drawing.Color.Gray;
             this.txt_username.PlaceholderText = "Username";
@@ -157,7 +157,7 @@
             this.txt_password.IconRight = ((System.Drawing.Image)(resources.GetObject("txt_password.IconRight")));
             this.txt_password.IconRightOffset = new System.Drawing.Point(15, 0);
             this.txt_password.Location = new System.Drawing.Point(82, 224);
-            this.txt_password.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txt_password.Margin = new System.Windows.Forms.Padding(4);
             this.txt_password.Name = "txt_password";
             this.txt_password.PlaceholderForeColor = System.Drawing.Color.Gray;
             this.txt_password.PlaceholderText = "Password";

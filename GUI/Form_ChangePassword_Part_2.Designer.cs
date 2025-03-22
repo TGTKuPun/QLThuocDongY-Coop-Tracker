@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form_ChangePassword_Part_2));
             this.guna2CircleButton1 = new Guna.UI2.WinForms.Guna2CircleButton();
             this.label1 = new System.Windows.Forms.Label();
@@ -35,6 +36,8 @@
             this.guna2TextBox2 = new Guna.UI2.WinForms.Guna2TextBox();
             this.btn_login = new Guna.UI2.WinForms.Guna2Button();
             this.btn_GoBack = new System.Windows.Forms.Label();
+            this.btn_Exit = new System.Windows.Forms.Label();
+            this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.SuspendLayout();
             // 
             // guna2CircleButton1
@@ -145,12 +148,31 @@
             this.btn_GoBack.Text = "Go Back";
             this.btn_GoBack.Click += new System.EventHandler(this.btn_GoBack_Click);
             // 
+            // btn_Exit
+            // 
+            this.btn_Exit.AutoSize = true;
+            this.btn_Exit.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_Exit.Font = new System.Drawing.Font("Roboto Light", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Exit.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(25)))), ((int)(((byte)(49)))));
+            this.btn_Exit.Location = new System.Drawing.Point(496, 9);
+            this.btn_Exit.Name = "btn_Exit";
+            this.btn_Exit.Size = new System.Drawing.Size(29, 29);
+            this.btn_Exit.TabIndex = 8;
+            this.btn_Exit.Text = "X";
+            this.btn_Exit.Click += new System.EventHandler(this.btn_Exit_Click);
+            // 
+            // guna2Elipse1
+            // 
+            this.guna2Elipse1.BorderRadius = 20;
+            this.guna2Elipse1.TargetControl = this;
+            // 
             // Form_ChangePassword_Part_2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(537, 522);
+            this.Controls.Add(this.btn_Exit);
             this.Controls.Add(this.btn_GoBack);
             this.Controls.Add(this.btn_login);
             this.Controls.Add(this.guna2TextBox2);
@@ -175,5 +197,7 @@
         private Guna.UI2.WinForms.Guna2TextBox guna2TextBox2;
         private Guna.UI2.WinForms.Guna2Button btn_login;
         private System.Windows.Forms.Label btn_GoBack;
+        private System.Windows.Forms.Label btn_Exit;
+        private Guna.UI2.WinForms.Guna2Elipse guna2Elipse1;
     }
 }

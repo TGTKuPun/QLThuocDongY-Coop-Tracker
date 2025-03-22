@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form_ChangePassword));
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.txt_username = new Guna.UI2.WinForms.Guna2TextBox();
@@ -35,6 +36,8 @@
             this.label2 = new System.Windows.Forms.Label();
             this.btn_Next = new Guna.UI2.WinForms.Guna2Button();
             this.btn_BackToLogin = new System.Windows.Forms.LinkLabel();
+            this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
+            this.btn_Exit = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -93,7 +96,7 @@
             // 
             // btn_Next
             // 
-            this.btn_Next.BorderRadius = 20;
+            this.btn_Next.BorderRadius = 15;
             this.btn_Next.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_Next.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btn_Next.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
@@ -121,12 +124,31 @@
             this.btn_BackToLogin.Text = "Back To Login";
             this.btn_BackToLogin.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.btn_BackToLogin_LinkClicked);
             // 
+            // guna2Elipse1
+            // 
+            this.guna2Elipse1.BorderRadius = 20;
+            this.guna2Elipse1.TargetControl = this;
+            // 
+            // btn_Exit
+            // 
+            this.btn_Exit.AutoSize = true;
+            this.btn_Exit.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_Exit.Font = new System.Drawing.Font("Roboto Light", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Exit.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(25)))), ((int)(((byte)(49)))));
+            this.btn_Exit.Location = new System.Drawing.Point(772, 9);
+            this.btn_Exit.Name = "btn_Exit";
+            this.btn_Exit.Size = new System.Drawing.Size(29, 29);
+            this.btn_Exit.TabIndex = 8;
+            this.btn_Exit.Text = "X";
+            this.btn_Exit.Click += new System.EventHandler(this.btn_Exit_Click);
+            // 
             // Form_ChangePassword
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(800, 506);
+            this.Controls.Add(this.btn_Exit);
             this.Controls.Add(this.btn_BackToLogin);
             this.Controls.Add(this.btn_Next);
             this.Controls.Add(this.label2);
@@ -152,5 +174,7 @@
         private System.Windows.Forms.Label label2;
         private Guna.UI2.WinForms.Guna2Button btn_Next;
         private System.Windows.Forms.LinkLabel btn_BackToLogin;
+        private Guna.UI2.WinForms.Guna2Elipse guna2Elipse1;
+        private System.Windows.Forms.Label btn_Exit;
     }
 }

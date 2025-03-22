@@ -10,19 +10,11 @@ using System.Windows.Forms;
 
 namespace GUI
 {
-    public partial class Form_ChangePassword_Part_2 : Form
+    public partial class Menu_Order : Form
     {
-        private Form_ChangePassword ChangeForm;
-        public Form_ChangePassword_Part_2(Form_ChangePassword form_ChangePasssword)
+        public Menu_Order()
         {
             InitializeComponent();
-            this.ChangeForm = form_ChangePasssword;
-        }
-
-        private void btn_GoBack_Click(object sender, EventArgs e)
-        {
-            ChangeForm.Show();
-            this.Close();
         }
 
         private void btn_Exit_Click(object sender, EventArgs e)

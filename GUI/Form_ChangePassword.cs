@@ -31,5 +31,10 @@ namespace GUI
             this.Hide();
             form.ShowDialog();
         }
+
+        private void btn_Exit_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }
