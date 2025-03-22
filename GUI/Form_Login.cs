@@ -43,18 +43,29 @@ namespace GUI
 
         private void btn_login_Click(object sender, EventArgs e)
         {
-            string username = txt_username.Text;
-            string password = txt_password.Text;
+            string username = txt_username.Text.Trim();
+            string password = txt_password.Text.Trim();
 
-            BUS_FormLogin busLogin = new BUS_FormLogin();
+            BUS_FormLogin bus_FormLogin = new BUS_FormLogin();
 
-            if (busLogin.checkLogin(username, password))
+            if (bus_FormLogin.checkLogin(username, password, out bool isAdmin))
             {
-                MessageBox.Show("Login successful!", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                this.Hide();
-                Menu menu = new Menu();
-                menu.ShowDialog();
-                this.Close();
+                if (isAdmin)
+                {
+                    MessageBox.Show("Hello Admin!", "Annoucement", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    // Chuyển sang giao diện Admin
+                    this.Hide();
+                    Menu menu = new Menu();
+                    menu.ShowDialog();
+                }
+                else
+                {
+                    MessageBox.Show("Hello User!", "Annoucement", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    // Chuyển sang giao diện User
+                    this.Hide();
+                    User_Order user_Order = new User_Order();
+                    user_Order.ShowDialog();
+                }
             }
             else
             {

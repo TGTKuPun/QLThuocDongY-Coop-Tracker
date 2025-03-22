@@ -96,6 +96,12 @@
     </Compile>
     <Compile Include="program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="User_Order.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="User_Order.Designer.cs">
+      <DependentUpon>User_Order.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Form_ChangePassword.resx">
       <DependentUpon>Form_ChangePassword.cs</DependentUpon>
     </EmbeddedResource>
@@ -126,6 +132,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="User_Order.resx">
+      <DependentUpon>User_Order.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
