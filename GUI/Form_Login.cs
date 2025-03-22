@@ -33,9 +33,11 @@ namespace GUI
         }
 
         private void btn_Reset_Click(object sender, EventArgs e)
-        {
+        {   
+            /*Reset content state*/
             txt_username.Clear();
             txt_password.Clear();
+            /*Adjust the border's color*/
             txt_username.FocusedState.BorderColor = Color.Silver;
             txt_password.FocusedState.BorderColor = Color.Silver;
             txt_username.Focus();
@@ -48,20 +50,21 @@ namespace GUI
 
             BUS_FormLogin bus_FormLogin = new BUS_FormLogin();
 
-            if (bus_FormLogin.checkLogin(username, password, out bool isAdmin))
+            // Nhận kết quả từ phương thức checkLogin
+            DTO_FormLogin user = bus_FormLogin.checkLogin(username, password, out bool isAdmin);
+
+            if (user != null) // Nếu đăng nhập thành công
             {
                 if (isAdmin)
                 {
-                    MessageBox.Show("Hello Admin!", "Annoucement", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    // Chuyển sang giao diện Admin
+                    MessageBox.Show($"Hello Admin !", "Announcement", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     this.Hide();
                     Menu menu = new Menu();
                     menu.ShowDialog();
                 }
                 else
                 {
-                    MessageBox.Show("Hello User!", "Annoucement", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    // Chuyển sang giao diện User
+                    MessageBox.Show($"Hello User !", "Announcement", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     this.Hide();
                     User_Order user_Order = new User_Order();
                     user_Order.ShowDialog();

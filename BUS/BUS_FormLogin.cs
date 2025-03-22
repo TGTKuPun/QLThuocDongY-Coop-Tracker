@@ -13,30 +13,22 @@ namespace BUS
     {
         private DAL_FormLogin dal_FormLogin = new DAL_FormLogin();
 
-        public bool checkLogin(string username, string password, out bool isAdmin)
+        public DTO_FormLogin checkLogin(string username, string password, out bool isAdmin)
         {
-            isAdmin = false; // Mặc định không phải admin
+            isAdmin = false; 
+            DTO_FormLogin userInfo = dal_FormLogin.checkLogin(username, password);
 
-            // Kiểm tra thông tin đăng nhập
-            DataTable result = dal_FormLogin.checkLogin(username, password);
-            if (result.Rows.Count > 0)
+            if (userInfo != null)
             {
-                // Lấy email từ database dựa vào username
-                string email = dal_FormLogin.getEmailByUsername(username).Trim();
-
-                // Debug để kiểm tra email lấy được
-                Console.WriteLine("Email lấy được: " + email);
-
-                // So sánh đúng email admin
-                if (email.Equals("janedoe_admin@gmail.com", StringComparison.OrdinalIgnoreCase))
+                // Chekc whether the user is admin or not
+                if (userInfo.Email.Equals("janedoe_admin@gmail.com", StringComparison.OrdinalIgnoreCase))
                 {
                     isAdmin = true;
                 }
-
-                return true;
+                return userInfo; // return object of userInfo
             }
 
-            return false;
+            return null; // Error Login
         }
     }
 }

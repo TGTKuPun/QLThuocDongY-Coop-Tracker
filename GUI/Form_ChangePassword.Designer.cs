@@ -69,7 +69,7 @@
             this.txt_username.Margin = new System.Windows.Forms.Padding(4);
             this.txt_username.Name = "txt_username";
             this.txt_username.PlaceholderForeColor = System.Drawing.Color.Gray;
-            this.txt_username.PlaceholderText = "Enter Your Username";
+            this.txt_username.PlaceholderText = "Enter Your Email";
             this.txt_username.SelectedText = "";
             this.txt_username.Size = new System.Drawing.Size(373, 53);
             this.txt_username.TabIndex = 2;
@@ -135,7 +135,7 @@
             this.btn_Exit.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_Exit.Font = new System.Drawing.Font("Roboto Light", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Exit.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(25)))), ((int)(((byte)(49)))));
-            this.btn_Exit.Location = new System.Drawing.Point(772, 9);
+            this.btn_Exit.Location = new System.Drawing.Point(768, 9);
             this.btn_Exit.Name = "btn_Exit";
             this.btn_Exit.Size = new System.Drawing.Size(29, 29);
             this.btn_Exit.TabIndex = 8;
