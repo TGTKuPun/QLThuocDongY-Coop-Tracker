@@ -50,7 +50,7 @@ namespace GUI
 
             BUS_FormLogin bus_FormLogin = new BUS_FormLogin();
 
-            // Nhận kết quả từ phương thức checkLogin
+            // Return object userInfo and check whether the user is admin or not
             DTO_FormLogin user = bus_FormLogin.checkLogin(username, password, out bool isAdmin);
 
             if (user != null) // Nếu đăng nhập thành công
@@ -75,5 +75,7 @@ namespace GUI
                 MessageBox.Show("Invalid username or password!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
+
     }
 }

@@ -58,12 +58,6 @@
     <Compile Include="Form_ChangePassword.Designer.cs">
       <DependentUpon>Form_ChangePassword.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form_ChangePassword_Part_2.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Form_ChangePassword_Part_2.Designer.cs">
-      <DependentUpon>Form_ChangePassword_Part_2.cs</DependentUpon>
-    </Compile>
     <Compile Include="Form_Login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -104,9 +98,6 @@
     </Compile>
     <EmbeddedResource Include="Form_ChangePassword.resx">
       <DependentUpon>Form_ChangePassword.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Form_ChangePassword_Part_2.resx">
-      <DependentUpon>Form_ChangePassword_Part_2.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form_Login.resx">
       <DependentUpon>Form_Login.cs</DependentUpon>
