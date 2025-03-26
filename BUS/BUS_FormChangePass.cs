@@ -13,13 +13,18 @@ namespace BUS
     {
         DAL_FormChangePass dal_FormChangePass = new DAL_FormChangePass();
 
-        public DTO_FormChangePass checkEmail(string email)
+        public DTO_FormChangePass checkEmail(string email, string old_password, string new_password, out bool Identity)
         {
-            DTO_FormChangePass emailInfo = dal_FormChangePass.getEmail(email);
+            Identity = false;
+            DTO_FormChangePass emailInfo = dal_FormChangePass.getInfo(email);
 
             if (emailInfo != null)
             {
-                return emailInfo;
+                if (Identity = emailInfo.Password.Equals(old_password))
+                {
+                    Identity = true;
+                    return emailInfo;
+                }
             }
 
             return null;

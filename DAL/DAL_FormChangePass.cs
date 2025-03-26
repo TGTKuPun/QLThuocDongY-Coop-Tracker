@@ -10,16 +10,18 @@ namespace DAL
 {
     public class DAL_FormChangePass
     {
-        public DTO_FormChangePass getEmail(string email)
+        public DTO_FormChangePass getInfo(string email)
         {
-            string sql = $"SELECT email FROM tb_useraccount WHERE email = '{email}'";
+
+            string sql = $"SELECT email, matkhau FROM tb_useraccount WHERE email = '{email}'";
 
             DataTable dt = Connection.selectQuery(sql);
 
             if (dt.Rows.Count > 0)
             {
                 return new DTO_FormChangePass(
-                    dt.Rows[0]["email"].ToString().Trim()
+                    dt.Rows[0]["email"].ToString().Trim(), /*assign data to variable 'email'*/
+                    dt.Rows[0]["matkhau"].ToString().Trim() /*assign data to variable 'password'*/
                 );
             }
             else return null;

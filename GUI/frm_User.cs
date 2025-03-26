@@ -10,14 +10,14 @@ using System.Windows.Forms;
 
 namespace GUI
 {
-    public partial class Menu_User : Form
+    public partial class frm_User : Form
     {
-        public Menu_User()
+        public frm_User()
         {
             InitializeComponent();
         }
 
-        private void btn_Exit_Click(object sender, EventArgs e)
+        private void btn_Exit_Click_1(object sender, EventArgs e)
         {
             Application.Exit();
         }

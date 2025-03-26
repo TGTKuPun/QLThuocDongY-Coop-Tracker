@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace GUI
 {
-    public partial class Menu_Order : Form
+    public partial class frm_Order : Form
     {
-        public Menu_Order()
+        public frm_Order()
         {
             InitializeComponent();
         }

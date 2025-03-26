@@ -13,11 +13,13 @@ using BUS;
 
 namespace GUI
 {
-    public partial class Form_Login : Form
+    public partial class frm_Login : Form
     {
-        public Form_Login()
+        public frm_Login(string Username, string Password)
         {
             InitializeComponent();
+            txt_username.Text = Username;
+            txt_password.Text = Password;
         }
 
         private void btn_Exit_Click(object sender, EventArgs e)
@@ -27,7 +29,7 @@ namespace GUI
 
         private void btn_ChangePassword_Click(object sender, EventArgs e)
         {
-            Form_ChangePassword form = new Form_ChangePassword(this);
+            frm_ChangePass form = new frm_ChangePass(this);
             this.Hide();
             form.ShowDialog();
         }
@@ -59,14 +61,14 @@ namespace GUI
                 {
                     MessageBox.Show($"Hello Admin !", "Announcement", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     this.Hide();
-                    Menu menu = new Menu();
+                    frm_Menu menu = new frm_Menu(username, password);
                     menu.ShowDialog();
                 }
                 else
                 {
                     MessageBox.Show($"Hello User !", "Announcement", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     this.Hide();
-                    User_Order user_Order = new User_Order();
+                    frm_uOrder user_Order = new frm_uOrder(user.UserID, username, password);
                     user_Order.ShowDialog();
                 }
             }
@@ -76,6 +78,9 @@ namespace GUI
             }
         }
 
-
+        private void btn_exit_Click_2(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

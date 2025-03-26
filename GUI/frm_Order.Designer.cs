@@ -1,6 +1,6 @@
 ﻿namespace GUI
 {
-    partial class Menu_Order
+    partial class frm_Order
     {
         /// <summary>
         /// Required designer variable.
@@ -29,10 +29,9 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Menu_Order));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frm_Order));
             this.guna2Button5 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2TextBox4 = new Guna.UI2.WinForms.Guna2TextBox();
-            this.btn_Exit = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.guna2Button3 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
@@ -56,6 +55,7 @@
             this.guna2ComboBox3 = new Guna.UI2.WinForms.Guna2ComboBox();
             this.guna2ComboBox2 = new Guna.UI2.WinForms.Guna2ComboBox();
             this.label4 = new System.Windows.Forms.Label();
+            this.btn_Exit = new Guna.UI2.WinForms.Guna2CircleButton();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.guna2GroupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
@@ -65,6 +65,7 @@
             // 
             // guna2Button5
             // 
+            this.guna2Button5.BackColor = System.Drawing.Color.Transparent;
             this.guna2Button5.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(26)))), ((int)(((byte)(50)))));
             this.guna2Button5.BorderRadius = 15;
             this.guna2Button5.BorderThickness = 2;
@@ -103,20 +104,6 @@
             this.guna2TextBox4.Size = new System.Drawing.Size(253, 36);
             this.guna2TextBox4.TabIndex = 26;
             // 
-            // btn_Exit
-            // 
-            this.btn_Exit.AutoSize = true;
-            this.btn_Exit.BackColor = System.Drawing.Color.White;
-            this.btn_Exit.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_Exit.Font = new System.Drawing.Font("Roboto Light", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Exit.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(26)))), ((int)(((byte)(50)))));
-            this.btn_Exit.Location = new System.Drawing.Point(1035, -3);
-            this.btn_Exit.Name = "btn_Exit";
-            this.btn_Exit.Size = new System.Drawing.Size(29, 29);
-            this.btn_Exit.TabIndex = 25;
-            this.btn_Exit.Text = "X";
-            this.btn_Exit.Click += new System.EventHandler(this.btn_Exit_Click);
-            // 
             // label5
             // 
             this.label5.AutoSize = true;
@@ -129,6 +116,7 @@
             // 
             // guna2Button3
             // 
+            this.guna2Button3.BackColor = System.Drawing.Color.Transparent;
             this.guna2Button3.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(83)))), ((int)(((byte)(83)))));
             this.guna2Button3.BorderRadius = 15;
             this.guna2Button3.BorderThickness = 2;
@@ -148,6 +136,7 @@
             // 
             // guna2Button2
             // 
+            this.guna2Button2.BackColor = System.Drawing.Color.Transparent;
             this.guna2Button2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(26)))), ((int)(((byte)(50)))));
             this.guna2Button2.BorderRadius = 15;
             this.guna2Button2.BorderThickness = 2;
@@ -167,6 +156,7 @@
             // 
             // guna2Button1
             // 
+            this.guna2Button1.BackColor = System.Drawing.Color.Transparent;
             this.guna2Button1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(174)))), ((int)(((byte)(79)))));
             this.guna2Button1.BorderRadius = 15;
             this.guna2Button1.BorderThickness = 2;
@@ -205,6 +195,7 @@
             // 
             // guna2Button4
             // 
+            this.guna2Button4.BackColor = System.Drawing.Color.Transparent;
             this.guna2Button4.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(26)))), ((int)(((byte)(50)))));
             this.guna2Button4.BorderRadius = 15;
             this.guna2Button4.BorderThickness = 2;
@@ -225,17 +216,17 @@
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(-3, 43);
+            this.dataGridView1.Location = new System.Drawing.Point(-3, 35);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(1064, 346);
+            this.dataGridView1.Size = new System.Drawing.Size(1067, 354);
             this.dataGridView1.TabIndex = 1;
             // 
             // guna2GroupBox2
             // 
             this.guna2GroupBox2.Controls.Add(this.dataGridView1);
-            this.guna2GroupBox2.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(26)))), ((int)(((byte)(50)))));
+            this.guna2GroupBox2.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(98)))), ((int)(((byte)(115)))));
             this.guna2GroupBox2.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2GroupBox2.ForeColor = System.Drawing.Color.White;
             this.guna2GroupBox2.Location = new System.Drawing.Point(8, 368);
@@ -267,6 +258,7 @@
             // 
             // pictureBox4
             // 
+            this.pictureBox4.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox4.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
             this.pictureBox4.Location = new System.Drawing.Point(18, 58);
@@ -287,7 +279,8 @@
             this.guna2GroupBox3.Controls.Add(this.guna2Button3);
             this.guna2GroupBox3.Controls.Add(this.guna2Button2);
             this.guna2GroupBox3.Controls.Add(this.guna2Button1);
-            this.guna2GroupBox3.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(26)))), ((int)(((byte)(50)))));
+            this.guna2GroupBox3.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(98)))), ((int)(((byte)(115)))));
+            this.guna2GroupBox3.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(247)))), ((int)(((byte)(251)))));
             this.guna2GroupBox3.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2GroupBox3.ForeColor = System.Drawing.Color.White;
             this.guna2GroupBox3.Location = new System.Drawing.Point(8, 226);
@@ -298,13 +291,13 @@
             // 
             // guna2GroupBox1
             // 
+            this.guna2GroupBox1.Controls.Add(this.btn_Exit);
             this.guna2GroupBox1.Controls.Add(this.label7);
             this.guna2GroupBox1.Controls.Add(this.guna2TextBox2);
             this.guna2GroupBox1.Controls.Add(this.label6);
             this.guna2GroupBox1.Controls.Add(this.label3);
             this.guna2GroupBox1.Controls.Add(this.guna2DateTimePicker1);
             this.guna2GroupBox1.Controls.Add(this.label8);
-            this.guna2GroupBox1.Controls.Add(this.btn_Exit);
             this.guna2GroupBox1.Controls.Add(this.guna2TextBox4);
             this.guna2GroupBox1.Controls.Add(this.guna2ComboBox3);
             this.guna2GroupBox1.Controls.Add(this.guna2ComboBox2);
@@ -314,7 +307,8 @@
             this.guna2GroupBox1.Controls.Add(this.label2);
             this.guna2GroupBox1.Controls.Add(this.label1);
             this.guna2GroupBox1.Controls.Add(this.pictureBox4);
-            this.guna2GroupBox1.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(26)))), ((int)(((byte)(50)))));
+            this.guna2GroupBox1.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(98)))), ((int)(((byte)(115)))));
+            this.guna2GroupBox1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(247)))), ((int)(((byte)(251)))));
             this.guna2GroupBox1.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2GroupBox1.ForeColor = System.Drawing.Color.White;
             this.guna2GroupBox1.Location = new System.Drawing.Point(8, 12);
@@ -441,11 +435,28 @@
             this.label4.TabIndex = 8;
             this.label4.Text = "Date";
             // 
-            // Menu_Order
+            // btn_Exit
+            // 
+            this.btn_Exit.BackColor = System.Drawing.Color.Transparent;
+            this.btn_Exit.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btn_Exit.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btn_Exit.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btn_Exit.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btn_Exit.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(247)))), ((int)(((byte)(251)))));
+            this.btn_Exit.Font = new System.Drawing.Font("Roboto SemiCondensed", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Exit.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(3)))), ((int)(((byte)(3)))));
+            this.btn_Exit.Image = ((System.Drawing.Image)(resources.GetObject("btn_Exit.Image")));
+            this.btn_Exit.Location = new System.Drawing.Point(1025, -13);
+            this.btn_Exit.Name = "btn_Exit";
+            this.btn_Exit.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.btn_Exit.Size = new System.Drawing.Size(59, 58);
+            this.btn_Exit.TabIndex = 37;
+            // 
+            // frm_Order
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 22F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.White;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(247)))), ((int)(((byte)(251)))));
             this.ClientSize = new System.Drawing.Size(1080, 766);
             this.Controls.Add(this.guna2GroupBox2);
             this.Controls.Add(this.guna2GroupBox3);
@@ -454,7 +465,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4);
-            this.Name = "Menu_Order";
+            this.Name = "frm_Order";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Menu_Order";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
@@ -471,7 +482,6 @@
 
         private Guna.UI2.WinForms.Guna2Button guna2Button5;
         private Guna.UI2.WinForms.Guna2TextBox guna2TextBox4;
-        private System.Windows.Forms.Label btn_Exit;
         private System.Windows.Forms.Label label5;
         private Guna.UI2.WinForms.Guna2Button guna2Button3;
         private Guna.UI2.WinForms.Guna2Button guna2Button2;
@@ -495,5 +505,6 @@
         private Guna.UI2.WinForms.Guna2ComboBox guna2ComboBox3;
         private Guna.UI2.WinForms.Guna2ComboBox guna2ComboBox2;
         private System.Windows.Forms.Label label4;
+        private Guna.UI2.WinForms.Guna2CircleButton btn_Exit;
     }
 }

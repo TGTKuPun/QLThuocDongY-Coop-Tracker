@@ -1,6 +1,6 @@
 ﻿namespace GUI
 {
-    partial class Menu_User
+    partial class frm_User
     {
         /// <summary>
         /// Required designer variable.
@@ -29,9 +29,8 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Menu_User));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frm_User));
             this.label8 = new System.Windows.Forms.Label();
-            this.btn_Exit = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.guna2TextBox1 = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2GroupBox3 = new Guna.UI2.WinForms.Guna2GroupBox();
@@ -50,19 +49,20 @@
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.guna2GroupBox2 = new Guna.UI2.WinForms.Guna2GroupBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.grd = new System.Windows.Forms.DataGridView();
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
+            this.btn_Exit = new Guna.UI2.WinForms.Guna2CircleButton();
             this.guna2GroupBox3.SuspendLayout();
             this.guna2GroupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.guna2GroupBox2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.grd)).BeginInit();
             this.SuspendLayout();
             // 
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.BackColor = System.Drawing.Color.White;
+            this.label8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(247)))), ((int)(((byte)(251)))));
             this.label8.Font = new System.Drawing.Font("Roboto Light", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(26)))), ((int)(((byte)(50)))));
             this.label8.Location = new System.Drawing.Point(189, 129);
@@ -70,20 +70,6 @@
             this.label8.Size = new System.Drawing.Size(86, 20);
             this.label8.TabIndex = 27;
             this.label8.Text = "Username";
-            // 
-            // btn_Exit
-            // 
-            this.btn_Exit.AutoSize = true;
-            this.btn_Exit.BackColor = System.Drawing.Color.White;
-            this.btn_Exit.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_Exit.Font = new System.Drawing.Font("Roboto Light", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Exit.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(26)))), ((int)(((byte)(50)))));
-            this.btn_Exit.Location = new System.Drawing.Point(1035, -3);
-            this.btn_Exit.Name = "btn_Exit";
-            this.btn_Exit.Size = new System.Drawing.Size(29, 29);
-            this.btn_Exit.TabIndex = 25;
-            this.btn_Exit.Text = "X";
-            this.btn_Exit.Click += new System.EventHandler(this.btn_Exit_Click);
             // 
             // label5
             // 
@@ -121,9 +107,10 @@
             this.guna2GroupBox3.Controls.Add(this.guna2Button3);
             this.guna2GroupBox3.Controls.Add(this.guna2Button2);
             this.guna2GroupBox3.Controls.Add(this.guna2Button1);
-            this.guna2GroupBox3.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(26)))), ((int)(((byte)(50)))));
+            this.guna2GroupBox3.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(98)))), ((int)(((byte)(115)))));
+            this.guna2GroupBox3.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(247)))), ((int)(((byte)(251)))));
             this.guna2GroupBox3.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2GroupBox3.ForeColor = System.Drawing.Color.White;
+            this.guna2GroupBox3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(247)))), ((int)(((byte)(251)))));
             this.guna2GroupBox3.Location = new System.Drawing.Point(8, 226);
             this.guna2GroupBox3.Name = "guna2GroupBox3";
             this.guna2GroupBox3.Size = new System.Drawing.Size(1064, 136);
@@ -132,6 +119,7 @@
             // 
             // guna2Button5
             // 
+            this.guna2Button5.BackColor = System.Drawing.Color.Transparent;
             this.guna2Button5.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(26)))), ((int)(((byte)(50)))));
             this.guna2Button5.BorderRadius = 15;
             this.guna2Button5.BorderThickness = 2;
@@ -153,6 +141,7 @@
             // 
             // guna2Button4
             // 
+            this.guna2Button4.BackColor = System.Drawing.Color.Transparent;
             this.guna2Button4.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(26)))), ((int)(((byte)(50)))));
             this.guna2Button4.BorderRadius = 15;
             this.guna2Button4.BorderThickness = 2;
@@ -172,6 +161,7 @@
             // 
             // guna2Button3
             // 
+            this.guna2Button3.BackColor = System.Drawing.Color.Transparent;
             this.guna2Button3.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(83)))), ((int)(((byte)(83)))));
             this.guna2Button3.BorderRadius = 15;
             this.guna2Button3.BorderThickness = 2;
@@ -191,6 +181,7 @@
             // 
             // guna2Button2
             // 
+            this.guna2Button2.BackColor = System.Drawing.Color.Transparent;
             this.guna2Button2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(26)))), ((int)(((byte)(50)))));
             this.guna2Button2.BorderRadius = 15;
             this.guna2Button2.BorderThickness = 2;
@@ -210,6 +201,7 @@
             // 
             // guna2Button1
             // 
+            this.guna2Button1.BackColor = System.Drawing.Color.Transparent;
             this.guna2Button1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(174)))), ((int)(((byte)(79)))));
             this.guna2Button1.BorderRadius = 15;
             this.guna2Button1.BorderThickness = 2;
@@ -229,19 +221,20 @@
             // 
             // guna2GroupBox1
             // 
+            this.guna2GroupBox1.Controls.Add(this.btn_Exit);
             this.guna2GroupBox1.Controls.Add(this.guna2TextBox3);
             this.guna2GroupBox1.Controls.Add(this.guna2TextBox2);
             this.guna2GroupBox1.Controls.Add(this.guna2TextBox5);
             this.guna2GroupBox1.Controls.Add(this.label7);
             this.guna2GroupBox1.Controls.Add(this.label8);
-            this.guna2GroupBox1.Controls.Add(this.btn_Exit);
             this.guna2GroupBox1.Controls.Add(this.label5);
             this.guna2GroupBox1.Controls.Add(this.guna2TextBox1);
             this.guna2GroupBox1.Controls.Add(this.label4);
             this.guna2GroupBox1.Controls.Add(this.label2);
             this.guna2GroupBox1.Controls.Add(this.label1);
             this.guna2GroupBox1.Controls.Add(this.pictureBox4);
-            this.guna2GroupBox1.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(26)))), ((int)(((byte)(50)))));
+            this.guna2GroupBox1.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(98)))), ((int)(((byte)(115)))));
+            this.guna2GroupBox1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(247)))), ((int)(((byte)(251)))));
             this.guna2GroupBox1.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2GroupBox1.ForeColor = System.Drawing.Color.White;
             this.guna2GroupBox1.Location = new System.Drawing.Point(8, 12);
@@ -310,7 +303,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.BackColor = System.Drawing.Color.White;
+            this.label7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(247)))), ((int)(((byte)(251)))));
             this.label7.Font = new System.Drawing.Font("Roboto Light", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(26)))), ((int)(((byte)(50)))));
             this.label7.Location = new System.Drawing.Point(620, 125);
@@ -322,7 +315,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.Color.White;
+            this.label4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(247)))), ((int)(((byte)(251)))));
             this.label4.Font = new System.Drawing.Font("Roboto Light", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(26)))), ((int)(((byte)(50)))));
             this.label4.Location = new System.Drawing.Point(620, 58);
@@ -344,7 +337,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.White;
+            this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(247)))), ((int)(((byte)(251)))));
             this.label1.Font = new System.Drawing.Font("Roboto Light", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(26)))), ((int)(((byte)(50)))));
             this.label1.Location = new System.Drawing.Point(189, 58);
@@ -365,8 +358,9 @@
             // 
             // guna2GroupBox2
             // 
-            this.guna2GroupBox2.Controls.Add(this.dataGridView1);
-            this.guna2GroupBox2.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(26)))), ((int)(((byte)(50)))));
+            this.guna2GroupBox2.Controls.Add(this.grd);
+            this.guna2GroupBox2.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(98)))), ((int)(((byte)(115)))));
+            this.guna2GroupBox2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(247)))), ((int)(((byte)(251)))));
             this.guna2GroupBox2.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2GroupBox2.ForeColor = System.Drawing.Color.White;
             this.guna2GroupBox2.Location = new System.Drawing.Point(8, 368);
@@ -375,24 +369,44 @@
             this.guna2GroupBox2.TabIndex = 7;
             this.guna2GroupBox2.Text = "Order Catalog";
             // 
-            // dataGridView1
+            // grd
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(-6, 43);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(1064, 346);
-            this.dataGridView1.TabIndex = 1;
+            this.grd.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.grd.Location = new System.Drawing.Point(-6, 36);
+            this.grd.Name = "grd";
+            this.grd.RowHeadersWidth = 51;
+            this.grd.RowTemplate.Height = 24;
+            this.grd.Size = new System.Drawing.Size(1070, 353);
+            this.grd.TabIndex = 1;
             // 
             // guna2Elipse1
             // 
             this.guna2Elipse1.BorderRadius = 20;
+            this.guna2Elipse1.TargetControl = this;
             // 
-            // Menu_User
+            // btn_Exit
+            // 
+            this.btn_Exit.BackColor = System.Drawing.Color.Transparent;
+            this.btn_Exit.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btn_Exit.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btn_Exit.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btn_Exit.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btn_Exit.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(247)))), ((int)(((byte)(251)))));
+            this.btn_Exit.Font = new System.Drawing.Font("Roboto SemiCondensed", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Exit.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(3)))), ((int)(((byte)(3)))));
+            this.btn_Exit.Image = ((System.Drawing.Image)(resources.GetObject("btn_Exit.Image")));
+            this.btn_Exit.Location = new System.Drawing.Point(1024, -14);
+            this.btn_Exit.Name = "btn_Exit";
+            this.btn_Exit.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.btn_Exit.Size = new System.Drawing.Size(59, 58);
+            this.btn_Exit.TabIndex = 36;
+            this.btn_Exit.Click += new System.EventHandler(this.btn_Exit_Click_1);
+            // 
+            // frm_User
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 22F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(247)))), ((int)(((byte)(251)))));
             this.ClientSize = new System.Drawing.Size(1080, 766);
             this.Controls.Add(this.guna2GroupBox3);
             this.Controls.Add(this.guna2GroupBox1);
@@ -401,7 +415,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4);
-            this.Name = "Menu_User";
+            this.Name = "frm_User";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Menu_User";
             this.guna2GroupBox3.ResumeLayout(false);
@@ -409,14 +423,13 @@
             this.guna2GroupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.guna2GroupBox2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.grd)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label btn_Exit;
         private System.Windows.Forms.Label label5;
         private Guna.UI2.WinForms.Guna2TextBox guna2TextBox1;
         private Guna.UI2.WinForms.Guna2GroupBox guna2GroupBox3;
@@ -430,12 +443,13 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox4;
         private Guna.UI2.WinForms.Guna2GroupBox guna2GroupBox2;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView grd;
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse1;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label4;
         private Guna.UI2.WinForms.Guna2TextBox guna2TextBox3;
         private Guna.UI2.WinForms.Guna2TextBox guna2TextBox2;
         private Guna.UI2.WinForms.Guna2TextBox guna2TextBox5;
+        private Guna.UI2.WinForms.Guna2CircleButton btn_Exit;
     }
 }
