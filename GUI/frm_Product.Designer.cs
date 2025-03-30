@@ -31,6 +31,7 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frm_Product));
             this.guna2GroupBox1 = new Guna.UI2.WinForms.Guna2GroupBox();
+            this.btn_exit = new Guna.UI2.WinForms.Guna2CircleButton();
             this.guna2TextBox4 = new Guna.UI2.WinForms.Guna2TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.guna2ComboBox3 = new Guna.UI2.WinForms.Guna2ComboBox();
@@ -54,7 +55,6 @@
             this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
-            this.btn_exit = new Guna.UI2.WinForms.Guna2CircleButton();
             this.guna2GroupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.guna2GroupBox2.SuspendLayout();
@@ -88,6 +88,24 @@
             this.guna2GroupBox1.Size = new System.Drawing.Size(1064, 208);
             this.guna2GroupBox1.TabIndex = 0;
             this.guna2GroupBox1.Text = "Product Field";
+            // 
+            // btn_exit
+            // 
+            this.btn_exit.BackColor = System.Drawing.Color.Transparent;
+            this.btn_exit.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btn_exit.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btn_exit.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btn_exit.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btn_exit.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(247)))), ((int)(((byte)(251)))));
+            this.btn_exit.Font = new System.Drawing.Font("Roboto SemiCondensed", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_exit.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(3)))), ((int)(((byte)(3)))));
+            this.btn_exit.Image = ((System.Drawing.Image)(resources.GetObject("btn_exit.Image")));
+            this.btn_exit.Location = new System.Drawing.Point(1017, -11);
+            this.btn_exit.Name = "btn_exit";
+            this.btn_exit.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.btn_exit.Size = new System.Drawing.Size(59, 58);
+            this.btn_exit.TabIndex = 27;
+            this.btn_exit.Click += new System.EventHandler(this.btn_exit_Click_1);
             // 
             // guna2TextBox4
             // 
@@ -422,23 +440,6 @@
             // 
             this.guna2Elipse1.BorderRadius = 20;
             this.guna2Elipse1.TargetControl = this;
-            // 
-            // btn_exit
-            // 
-            this.btn_exit.BackColor = System.Drawing.Color.Transparent;
-            this.btn_exit.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btn_exit.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btn_exit.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btn_exit.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btn_exit.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(247)))), ((int)(((byte)(251)))));
-            this.btn_exit.Font = new System.Drawing.Font("Roboto SemiCondensed", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_exit.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(3)))), ((int)(((byte)(3)))));
-            this.btn_exit.Image = ((System.Drawing.Image)(resources.GetObject("btn_exit.Image")));
-            this.btn_exit.Location = new System.Drawing.Point(1017, -11);
-            this.btn_exit.Name = "btn_exit";
-            this.btn_exit.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.btn_exit.Size = new System.Drawing.Size(59, 58);
-            this.btn_exit.TabIndex = 27;
             // 
             // frm_Product
             // 

@@ -17,7 +17,7 @@ namespace GUI
             InitializeComponent();
         }
 
-        private void btn_Exit_Click(object sender, EventArgs e)
+        private void btn_exit_Click_1(object sender, EventArgs e)
         {
             Application.Exit();
         }
