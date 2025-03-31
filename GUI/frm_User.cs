@@ -13,6 +13,7 @@ using DTO;
 using Guna.UI2.WinForms;
 using iTextSharp.text.pdf;
 using iTextSharp.text;
+using System.Drawing.Printing;
 
 
 namespace GUI
@@ -291,68 +292,101 @@ namespace GUI
             }
         }
 
-        private void btn_pdf_Click(object sender, EventArgs e)
-        {
-            if (grd.Rows.Count == 0)
-            {
-                MessageBox.Show("No data available to export!", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                return;
-            }
+        private PrintDocument printDocument = new PrintDocument();
+        private PrintPreviewDialog printPreviewDialog = new PrintPreviewDialog();
 
-            SaveFileDialog sfd = new SaveFileDialog
+        private void PrintDocument_PrintPage(object sender, PrintPageEventArgs e)
+        {
+            Graphics g = e.Graphics;
+            float yPosition = 50;
+            float cellPadding = 8; 
+            Pen borderPen = new Pen(Color.Black, 1);
+
+            using (System.Drawing.Font titleFont = new System.Drawing.Font("Arial", 16, FontStyle.Bold))
+            using (System.Drawing.Font headerFont = new System.Drawing.Font("Arial", 12, FontStyle.Bold))
+            using (System.Drawing.Font contentFont = new System.Drawing.Font("Arial", 10, FontStyle.Regular))
             {
-                Filter = "PDF files (*.pdf)|*.pdf",
-                FileName = "UserList.pdf"
+
+                string titleText = "User List";
+                SizeF titleSize = g.MeasureString(titleText, titleFont);
+                float titleX = (e.PageBounds.Width - titleSize.Width) / 2;
+                g.DrawString(titleText, titleFont, Brushes.Black, new PointF(titleX, yPosition));
+                yPosition += 40;
+
+
+                int[] columnWidths = { 100, 150, 150, 200 }; 
+                string[] headers = { "ID", "Full Name", "Username", "Email" };
+
+                float tableStartX = (e.PageBounds.Width - columnWidths.Sum()) / 2; 
+                float currentX = tableStartX;
+                float headerY = yPosition;
+
+
+                for (int i = 0; i < headers.Length; i++)
+                {
+                    RectangleF headerRect = new RectangleF(currentX, headerY, columnWidths[i], 30);
+                    g.DrawRectangle(borderPen, headerRect.X, headerRect.Y, headerRect.Width, headerRect.Height);
+                    g.DrawString(headers[i], headerFont, Brushes.Black, new PointF(headerRect.X + cellPadding, headerRect.Y + 5)); 
+                    currentX += columnWidths[i];
+                }
+
+                yPosition += 30; 
+
+                
+                foreach (DataGridViewRow row in grd.Rows)
+                {
+                    if (row.IsNewRow) continue;
+                    currentX = tableStartX;
+
+                    float maxRowHeight = 25;
+                    List<string> rowData = new List<string>();
+
+                    for (int i = 0; i < headers.Length; i++)
+                    {
+                        string cellText = row.Cells[i].Value?.ToString() ?? "";
+                        rowData.Add(cellText);
+
+
+                        SizeF textSize = g.MeasureString(cellText, contentFont, (int)(columnWidths[i] - 2 * cellPadding));
+                        int requiredLines = (int)Math.Ceiling(textSize.Height / contentFont.Height);
+                        maxRowHeight = Math.Max(maxRowHeight, requiredLines * contentFont.Height + 8); 
+                    }
+
+                    for (int i = 0; i < headers.Length; i++)
+                    {
+                        string cellText = rowData[i];
+                        RectangleF cellRect = new RectangleF(currentX, yPosition, columnWidths[i], maxRowHeight);
+                        g.DrawRectangle(borderPen, cellRect.X, cellRect.Y, cellRect.Width, cellRect.Height);
+
+                        StringFormat format = new StringFormat();
+                        format.Alignment = StringAlignment.Near; 
+                        format.LineAlignment = StringAlignment.Near; 
+                        format.Trimming = StringTrimming.Word;
+                        format.FormatFlags = StringFormatFlags.LineLimit;
+
+                        g.DrawString(cellText, contentFont, Brushes.Black, new RectangleF(cellRect.X + cellPadding, cellRect.Y + cellPadding, cellRect.Width - 2 * cellPadding, cellRect.Height - 2 * cellPadding), format);
+
+                        currentX += columnWidths[i];
+                    }
+
+                    yPosition += maxRowHeight; 
+                }
+            }
+        }
+
+        private void btn_print_Click(object sender, EventArgs e)
+        {
+            PrintDocument printDoc = new PrintDocument();
+            printDoc.PrintPage += new PrintPageEventHandler(PrintDocument_PrintPage);
+
+            PrintPreviewDialog previewDialog = new PrintPreviewDialog
+            {
+                Document = printDoc,
+                Width = 800,
+                Height = 600
             };
 
-            if (sfd.ShowDialog() == DialogResult.OK)
-            {
-                try
-                {
-                    Document doc = new Document(PageSize.A4);
-                    PdfWriter.GetInstance(doc, new FileStream(sfd.FileName, FileMode.Create));
-                    doc.Open();
-
-
-                    iTextSharp.text.Font titleFont = FontFactory.GetFont(BaseFont.HELVETICA_BOLD, 12);
-                    Paragraph title = new Paragraph("User List", titleFont);
-                    title.Alignment = Element.ALIGN_CENTER;
-                    doc.Add(title);
-                    doc.Add(new Paragraph("\n"));
-
-                    PdfPTable table = new PdfPTable(grd.Columns.Count);
-                    table.WidthPercentage = 100;
-
-                    foreach (DataGridViewColumn column in grd.Columns)
-                    {
-                        PdfPCell cell = new PdfPCell(new Phrase(column.HeaderText));
-                        cell.BackgroundColor = new BaseColor(200, 200, 200); 
-                        cell.HorizontalAlignment = Element.ALIGN_CENTER;
-                        table.AddCell(cell);
-                    }
-
-
-                    foreach (DataGridViewRow row in grd.Rows)
-                    {
-                        if (!row.IsNewRow)
-                        {
-                            foreach (DataGridViewCell cell in row.Cells)
-                            {
-                                table.AddCell(new Phrase(cell.Value?.ToString() ?? ""));
-                            }
-                        }
-                    }
-
-                    doc.Add(table);
-                    doc.Close();
-
-                    MessageBox.Show("Exported to PDF successfully!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                }
-                catch (Exception ex)
-                {
-                    MessageBox.Show("Error exporting to PDF: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                }
-            }
+            previewDialog.ShowDialog();
         }
     }
 }

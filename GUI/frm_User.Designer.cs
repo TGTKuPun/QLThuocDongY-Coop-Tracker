@@ -34,7 +34,7 @@
             this.label5 = new System.Windows.Forms.Label();
             this.txt_id = new Guna.UI2.WinForms.Guna2TextBox();
             this.grp_btn = new Guna.UI2.WinForms.Guna2GroupBox();
-            this.btn_pdf = new Guna.UI2.WinForms.Guna2Button();
+            this.btn_print = new Guna.UI2.WinForms.Guna2Button();
             this.btn_save = new Guna.UI2.WinForms.Guna2Button();
             this.btn_del = new Guna.UI2.WinForms.Guna2Button();
             this.btn_edit = new Guna.UI2.WinForms.Guna2Button();
@@ -105,7 +105,7 @@
             // 
             // grp_btn
             // 
-            this.grp_btn.Controls.Add(this.btn_pdf);
+            this.grp_btn.Controls.Add(this.btn_print);
             this.grp_btn.Controls.Add(this.btn_save);
             this.grp_btn.Controls.Add(this.btn_del);
             this.grp_btn.Controls.Add(this.btn_edit);
@@ -120,28 +120,28 @@
             this.grp_btn.TabIndex = 8;
             this.grp_btn.Text = "Modification Field";
             // 
-            // btn_pdf
+            // btn_print
             // 
-            this.btn_pdf.BackColor = System.Drawing.Color.Transparent;
-            this.btn_pdf.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(26)))), ((int)(((byte)(50)))));
-            this.btn_pdf.BorderRadius = 15;
-            this.btn_pdf.BorderThickness = 2;
-            this.btn_pdf.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_pdf.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btn_pdf.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btn_pdf.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btn_pdf.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btn_pdf.FillColor = System.Drawing.Color.Transparent;
-            this.btn_pdf.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_pdf.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(26)))), ((int)(((byte)(50)))));
-            this.btn_pdf.ImageAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.btn_pdf.ImageOffset = new System.Drawing.Point(20, 0);
-            this.btn_pdf.Location = new System.Drawing.Point(870, 61);
-            this.btn_pdf.Name = "btn_pdf";
-            this.btn_pdf.Size = new System.Drawing.Size(191, 59);
-            this.btn_pdf.TabIndex = 4;
-            this.btn_pdf.Text = "Export To PDF";
-            this.btn_pdf.Click += new System.EventHandler(this.btn_pdf_Click);
+            this.btn_print.BackColor = System.Drawing.Color.Transparent;
+            this.btn_print.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(26)))), ((int)(((byte)(50)))));
+            this.btn_print.BorderRadius = 15;
+            this.btn_print.BorderThickness = 2;
+            this.btn_print.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_print.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btn_print.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btn_print.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btn_print.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btn_print.FillColor = System.Drawing.Color.Transparent;
+            this.btn_print.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_print.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(26)))), ((int)(((byte)(50)))));
+            this.btn_print.ImageAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.btn_print.ImageOffset = new System.Drawing.Point(20, 0);
+            this.btn_print.Location = new System.Drawing.Point(870, 61);
+            this.btn_print.Name = "btn_print";
+            this.btn_print.Size = new System.Drawing.Size(191, 59);
+            this.btn_print.TabIndex = 4;
+            this.btn_print.Text = "Print";
+            this.btn_print.Click += new System.EventHandler(this.btn_print_Click);
             // 
             // btn_save
             // 
@@ -492,7 +492,7 @@
         private System.Windows.Forms.Label label5;
         private Guna.UI2.WinForms.Guna2TextBox txt_id;
         private Guna.UI2.WinForms.Guna2GroupBox grp_btn;
-        private Guna.UI2.WinForms.Guna2Button btn_pdf;
+        private Guna.UI2.WinForms.Guna2Button btn_print;
         private Guna.UI2.WinForms.Guna2Button btn_save;
         private Guna.UI2.WinForms.Guna2Button btn_del;
         private Guna.UI2.WinForms.Guna2Button btn_edit;
