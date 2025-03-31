@@ -1,8 +1,10 @@
-﻿using System;
+﻿using Config;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
 
 namespace GUI
 {
@@ -16,8 +18,18 @@ namespace GUI
         {   
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
+
+            string configPath = "config.txt";
+            if (File.Exists(configPath))
+            {
+                Config_Settings.LoadConfig(configPath);
+            }
+            else
+            {
+                Application.Run(new frm_Config());
+            }
+
             Application.Run(new frm_Login("", ""));
-            //Application.Run(new Menu());
         }
     }
 }

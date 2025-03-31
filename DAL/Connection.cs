@@ -1,4 +1,5 @@
-﻿using DTO;
+﻿using Config;
+using DTO;
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -18,13 +19,23 @@ namespace DAL
         {
             try
             {
-                string connectionString = "initial catalog=db_QLThuocDongY; data source=DESKTOP-RCOTNC5\\SQLEXPRESS; integrated security=true";
+                string connectionString = "";
+
+                if (Config_Settings.Authen == "windows")
+                {
+                    connectionString = $"Server={Config_Settings.Server}; Database={Config_Settings.Database}; Trusted_Connection=True;";
+                }
+                else
+                {
+                    connectionString = $"Server={Config_Settings.Server}; Database={Config_Settings.Database}; User Id={Config_Settings.Username}; Password={Config_Settings.Password};";
+                }
+
                 cn = new SqlConnection(connectionString);
                 cn.Open();
             }
             catch (Exception ex)
             {
-                throw new Exception("Error occurred during connection" + ex.Message);
+                throw new Exception("Error occurred during connection: " + ex.Message);
             }
         }
 

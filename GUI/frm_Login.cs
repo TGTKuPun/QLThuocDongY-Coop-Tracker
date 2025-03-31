@@ -9,6 +9,8 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using DTO;
 using BUS;
+using System.IO;
+using Config;
 
 
 namespace GUI
@@ -20,6 +22,7 @@ namespace GUI
             InitializeComponent();
             txt_username.Text = Username;
             txt_password.Text = Password;
+
         }
 
         private void btn_Exit_Click(object sender, EventArgs e)
@@ -47,6 +50,12 @@ namespace GUI
 
         private void btn_login_Click(object sender, EventArgs e)
         {
+            if (string.IsNullOrEmpty(Config_Settings.Server) || string.IsNullOrEmpty(Config_Settings.Database))
+            {
+                MessageBox.Show("Config is missing! Please configure the system first.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
             string username = txt_username.Text.Trim();
             string password = txt_password.Text.Trim();
 
