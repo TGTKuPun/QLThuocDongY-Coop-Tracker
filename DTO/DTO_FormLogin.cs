@@ -8,17 +8,17 @@ namespace DTO
 {
     public class DTO_FormLogin
     {   
-        public string UserID { get; set; }
-        public string Username { get; set; }
-        public string Password { get; set; }
-        public string Email { get; set; }
+        public string USERID { get; set; }
+        public string USERNAME { get; set; }
+        public string PASSWORD { get; set; }
+        public string EMAIL { get; set; }
 
         public DTO_FormLogin(string userID, string username, string password, string email)
         {   
-            this.UserID = userID;
-            this.Username = username;
-            this.Password = password;
-            this.Email = email;  
+            this.USERID = userID;
+            this.USERNAME = username;
+            this.PASSWORD = password;
+            this.EMAIL = email;  
         }
     }
 }

@@ -25,7 +25,7 @@ namespace BUS
                     row["hoten"].ToString(),
                     row["username"].ToString(),
                     row["email"].ToString(),
-                    row["matkhau"].ToString()); // Password is not retrieved
+                    row["matkhau"].ToString());
                 userList.Add(user);
             }
             return userList;

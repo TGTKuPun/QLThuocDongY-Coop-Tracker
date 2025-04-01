@@ -46,6 +46,7 @@
     <Compile Include="BUS_FormChangePass.cs" />
     <Compile Include="BUS_FormLogin.cs" />
     <Compile Include="BUS_FormUser.cs" />
+    <Compile Include="BUS_uOrder.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

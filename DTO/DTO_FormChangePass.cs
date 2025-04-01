@@ -8,14 +8,14 @@ namespace DTO
 {
     public class DTO_FormChangePass
     {
-        public string Email { get; set; }
+        public string EMAIL { get; set; }
 
-        public string Password { get; set; }
+        public string PASSWORD { get; set; }
 
         public DTO_FormChangePass(string email, string password)
         {   
-            this.Email = email;
-            this.Password = password;
+            this.EMAIL = email;
+            this.PASSWORD = password;
         }
     }
 }

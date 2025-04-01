@@ -18,6 +18,7 @@ namespace DAL
 
             if (dt.Rows.Count > 0)
             {
+                // Initialize a object to store the data from database
                 return new DTO_FormLogin(
                     dt.Rows[0]["id_user"].ToString().Trim(),
                     dt.Rows[0]["username"].ToString().Trim(),

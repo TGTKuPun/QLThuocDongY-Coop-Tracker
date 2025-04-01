@@ -20,7 +20,7 @@ namespace BUS
 
             if (emailInfo != null)
             {
-                if (Identity = emailInfo.Password.Equals(old_password))
+                if (Identity = emailInfo.PASSWORD.Equals(old_password))
                 {
                     Identity = true;
                     return emailInfo;

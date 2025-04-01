@@ -21,10 +21,12 @@ namespace DAL
             {
                 string connectionString = "";
 
+                // Window Authentication
                 if (Config_Settings.Authen == "windows")
                 {
                     connectionString = $"Server={Config_Settings.Server}; Database={Config_Settings.Database}; Trusted_Connection=True;";
                 }
+                // SQL Server Authentication
                 else
                 {
                     connectionString = $"Server={Config_Settings.Server}; Database={Config_Settings.Database}; User Id={Config_Settings.Username}; Password={Config_Settings.Password};";

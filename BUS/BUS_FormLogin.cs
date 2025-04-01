@@ -21,7 +21,7 @@ namespace BUS
             if (userInfo != null)
             {
                 // Chekc whether the user is admin or not
-                if (userInfo.Email.Equals("janedoe_admin@gmail.com", StringComparison.OrdinalIgnoreCase))
+                if (userInfo.EMAIL.Equals("janedoe_admin@gmail.com", StringComparison.OrdinalIgnoreCase))
                 {
                     isAdmin = true;
                 }

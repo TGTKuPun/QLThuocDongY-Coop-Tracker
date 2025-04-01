@@ -35,7 +35,7 @@ namespace GUI
 
         public void styleGRD()
         {
-            grd.DefaultCellStyle.Font = new System.Drawing.Font("Roboto", 11, FontStyle.Regular);
+            grd.DefaultCellStyle.Font = new System.Drawing.Font("Arial", 11, FontStyle.Regular);
             grd.DefaultCellStyle.ForeColor = Color.Black;
             grd.DefaultCellStyle.BackColor = Color.White;
 
@@ -55,33 +55,33 @@ namespace GUI
             grd.AutoGenerateColumns = false;
 
             DataGridViewTextBoxColumn col_id = new DataGridViewTextBoxColumn();
-            col_id.Name = "id_user";
-            col_id.HeaderText = "ID User";
-            col_id.DataPropertyName = "id_user";
+            col_id.Name = "id_user"; 
+            col_id.HeaderText = "ID User"; // Tên tiêu đề cho cột trong DataGridView
+            col_id.DataPropertyName = "USERID"; // Tên cột trong DTO_FormUser
             grd.Columns.Add(col_id);
 
             DataGridViewTextBoxColumn col_hoten = new DataGridViewTextBoxColumn();
             col_hoten.Name = "hoten";
             col_hoten.HeaderText = "Full Name";
-            col_hoten.DataPropertyName = "hoten";
+            col_hoten.DataPropertyName = "FULLNAME"; // Tên cột trong DTO_FormUser
             grd.Columns.Add(col_hoten);
 
             DataGridViewTextBoxColumn col_username = new DataGridViewTextBoxColumn();
             col_username.Name = "username";
-            col_username.HeaderText = "Username";
-            col_username.DataPropertyName = "username";
+            col_username.HeaderText = "Username"; // Tên tiêu đề cho cột trong DataGridView
+            col_username.DataPropertyName = "USERNAME"; // Tên cột trong DTO_FormUser
             grd.Columns.Add(col_username);
 
             DataGridViewTextBoxColumn col_email = new DataGridViewTextBoxColumn();
             col_email.Name = "email";
-            col_email.HeaderText = "Email";
-            col_email.DataPropertyName = "email";
+            col_email.HeaderText = "Email"; // Tên tiêu đề cho cột trong DataGridView
+            col_email.DataPropertyName = "EMAIL"; // Tên cột trong DTO_FormUser
             grd.Columns.Add(col_email);
 
             DataGridViewColumn col_pass = new DataGridViewTextBoxColumn();
             col_pass.Name = "password";
-            col_pass.HeaderText = "Password";
-            col_pass.DataPropertyName = "password";
+            col_pass.HeaderText = "Password"; // Tên tiêu đề cho cột trong DataGridView
+            col_pass.DataPropertyName = "PASSWORD"; // Tên cột trong DTO_FormUser
             col_pass.Visible = false;
             grd.Columns.Add(col_pass);
 
@@ -94,7 +94,7 @@ namespace GUI
 
             foreach (var user in userList)
             {
-                user.password = "******";
+                user.PASSWORD = "******";
             }
 
             grd.AutoGenerateColumns = false;

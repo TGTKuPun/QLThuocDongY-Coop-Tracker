@@ -21,7 +21,7 @@ namespace DAL
         public void addUser(DTO_FormUser user)
         {
             string sql = string.Format("INSERT INTO tb_useraccount(id_user, hoten, username, email, matkhau) VALUES(N'{0}', N'{1}', N'{2}', N'{3}', N'{4}')",
-                user.id_user, user.hoten, user.username, user.email, user.password);
+                user.USERID, user.FULLNAME, user.USERNAME, user.EMAIL, user.PASSWORD);
             Connection.actionQuery(sql);
         }
 
@@ -30,13 +30,13 @@ namespace DAL
             string sql = "SELECT COUNT(*) FROM tb_useraccount";
             DataTable dt = Connection.selectQuery(sql);
 
-            int count = int.Parse(dt.Rows[0][0].ToString()) + 1; // Đếm số user và tăng lên 1
-            return "U" + count.ToString("D3"); // Format thành U001, U002...
+            int count = int.Parse(dt.Rows[0][0].ToString()) + 1; 
+            return "U" + count.ToString("D3"); 
         }
 
         public void delUser(List<string> userIDs)
         {
-            string ids = string.Join("','", userIDs); // Chuyển danh sách ID thành chuỗi SQL
+            string ids = string.Join("','", userIDs); 
             string sql = $"DELETE FROM tb_useraccount WHERE id_user IN ('{ids}')";
 
             Connection.actionQuery(sql);
@@ -45,7 +45,7 @@ namespace DAL
         public void updateUser(DTO_FormUser user)
         {
             string sql = string.Format("UPDATE tb_useraccount SET hoten = N'{1}', username = N'{2}', email = N'{3}' WHERE id_user = N'{0}'",
-                                        user.id_user, user.hoten, user.username, user.email);
+                                        user.USERID, user.FULLNAME, user.USERNAME, user.EMAIL);
             Connection.actionQuery(sql);
         }
 

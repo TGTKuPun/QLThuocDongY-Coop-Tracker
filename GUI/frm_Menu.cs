@@ -41,13 +41,6 @@ namespace GUI
             menu_product.ShowDialog();
         }
 
-        private void img_Order_Click(object sender, EventArgs e)
-        {
-            frm_Order menu_order = new frm_Order();
-            this.Hide();
-            menu_order.ShowDialog();
-        }
-
         private void label_signout_Click(object sender, EventArgs e)
         {
             DialogResult result = MessageBox.Show(
@@ -60,8 +53,8 @@ namespace GUI
             if (result == DialogResult.Yes)
             {
                 this.Hide();
-                frm_Login loginForm = new frm_Login(username, password);
-                loginForm.ShowDialog();
+                frm_SignIn signInForm = new frm_SignIn(username, password);
+                signInForm.ShowDialog();
             }
         }
     }

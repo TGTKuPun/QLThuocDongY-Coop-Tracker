@@ -1,4 +1,7 @@
-﻿using System;
+﻿using BUS;
+using Config;
+using DTO;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -7,48 +10,25 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using DTO;
-using BUS;
-using System.IO;
-using Config;
-
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
 
 namespace GUI
 {
-    public partial class frm_Login : Form
+    public partial class frm_SignIn : Form
     {
-        public frm_Login(string Username, string Password)
+        public frm_SignIn(string username, string password)
         {
             InitializeComponent();
-            txt_username.Text = Username;
-            txt_password.Text = Password;
-
+            txt_username.Text = username;
+            txt_password.Text = password;
         }
 
-        private void btn_Exit_Click(object sender, EventArgs e)
+        private void btn_exit_Click(object sender, EventArgs e)
         {
             Application.Exit();
         }
 
-        private void btn_ChangePassword_Click(object sender, EventArgs e)
-        {
-            frm_ChangePass form = new frm_ChangePass(this);
-            this.Hide();
-            form.ShowDialog();
-        }
-
-        private void btn_Reset_Click(object sender, EventArgs e)
-        {   
-            /*Reset content state*/
-            txt_username.Clear();
-            txt_password.Clear();
-            /*Adjust the border's color*/
-            txt_username.FocusedState.BorderColor = Color.Silver;
-            txt_password.FocusedState.BorderColor = Color.Silver;
-            txt_username.Focus();
-        }
-
-        private void btn_login_Click(object sender, EventArgs e)
+        private void btn_signIn_Click(object sender, EventArgs e)
         {
             if (string.IsNullOrEmpty(Config_Settings.Server) || string.IsNullOrEmpty(Config_Settings.Database))
             {
@@ -77,7 +57,7 @@ namespace GUI
                 {
                     MessageBox.Show($"Hello User !", "Announcement", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     this.Hide();
-                    frm_uOrder user_Order = new frm_uOrder(user.UserID, username, password);
+                    frm_uOrder user_Order = new frm_uOrder(user.USERID, username, password);
                     user_Order.ShowDialog();
                 }
             }
@@ -87,9 +67,22 @@ namespace GUI
             }
         }
 
-        private void btn_exit_Click_2(object sender, EventArgs e)
+        private void btn_reset_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            /*Reset content state*/
+            txt_username.Clear();
+            txt_password.Clear();
+            /*Adjust the border's color*/
+            txt_username.FocusedState.BorderColor = Color.Silver;
+            txt_password.FocusedState.BorderColor = Color.Silver;
+            txt_username.Focus();
+        }
+
+        private void lb_changePassword_Click(object sender, EventArgs e)
+        {
+            frm_ChangePass form = new frm_ChangePass(this);
+            this.Hide();
+            form.ShowDialog();
         }
     }
 }

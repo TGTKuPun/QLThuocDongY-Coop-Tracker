@@ -29,7 +29,7 @@ namespace GUI
                 Application.Run(new frm_Config());
             }
 
-            Application.Run(new frm_Login("", ""));
+            Application.Run(new frm_SignIn("", ""));
         }
     }
 }

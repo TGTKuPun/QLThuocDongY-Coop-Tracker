@@ -8,19 +8,19 @@ namespace DTO
 {
     public class DTO_FormUser
     {
-        public string id_user { get; set; }
-        public string hoten { get; set; }
-        public string username { get; set; }
-        public string email { get; set; }
-        public string password { get; set; }
+        public string USERID { get; set; }
+        public string FULLNAME { get; set; }
+        public string USERNAME { get; set; }
+        public string EMAIL { get; set; }
+        public string PASSWORD { get; set; }
 
-        public DTO_FormUser(string idUser, string Hoten, string Username, string Email, string Pass) 
+        public DTO_FormUser(string user_id, string fullname, string username, string email, string password) 
         {
-            this.id_user = idUser;
-            this.hoten = Hoten;
-            this.username = Username;
-            this.email = Email;
-            this.password = Pass;
+            this.USERID = user_id;
+            this.FULLNAME = fullname;
+            this.USERNAME = username;
+            this.EMAIL = email;
+            this.PASSWORD = password;
         }
     }
 }

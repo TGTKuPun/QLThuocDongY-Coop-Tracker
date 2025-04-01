@@ -44,6 +44,7 @@
     <Compile Include="DTO_FormChangePass.cs" />
     <Compile Include="DTO_FormLogin.cs" />
     <Compile Include="DTO_FormUser.cs" />
+    <Compile Include="DTO_uOrder.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

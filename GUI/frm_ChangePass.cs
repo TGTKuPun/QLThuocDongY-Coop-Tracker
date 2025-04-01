@@ -14,22 +14,17 @@ namespace GUI
 {
     public partial class frm_ChangePass : Form
     {
-        private frm_Login LoginForm;
-        public frm_ChangePass(frm_Login form_Login)
+        private frm_SignIn signInForm;
+        public frm_ChangePass(frm_SignIn form_signIn)
         {
             InitializeComponent();
-            this.LoginForm = form_Login;
+            this.signInForm = form_signIn;
         }
 
         private void btn_GoBack_Click(object sender, EventArgs e)
         {
-            LoginForm.Show();
+            signInForm.Show();
             this.Close();
-        }
-
-        private void btn_Exit_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
         }
 
         private void btn_ChangePass_Click(object sender, EventArgs e)
@@ -44,11 +39,11 @@ namespace GUI
 
             if (dt_user != null && Identity)
             {   
-                if (new_password != dt_user.Password)
+                if (new_password != dt_user.PASSWORD)
                 {
                     bus_formChangePass.changePassword(email, new_password);
                     MessageBox.Show("Password changed successfully", "Announcement", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    LoginForm.Show();
+                    signInForm.Show();
                     this.Close();
                 }
                 else
