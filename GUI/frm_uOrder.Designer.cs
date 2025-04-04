@@ -41,7 +41,7 @@
             this.txt_price = new Guna.UI2.WinForms.Guna2TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.btn_proceed = new Guna.UI2.WinForms.Guna2Button();
+            this.btn_placeOrder = new Guna.UI2.WinForms.Guna2Button();
             this.btn_cancel = new Guna.UI2.WinForms.Guna2Button();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
@@ -73,7 +73,7 @@
             this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(98)))), ((int)(((byte)(115)))));
             this.label1.Font = new System.Drawing.Font("Roboto SemiCondensed", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(14, 12);
+            this.label1.Location = new System.Drawing.Point(19, 14);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(106, 37);
             this.label1.TabIndex = 0;
@@ -201,22 +201,22 @@
             this.label7.TabIndex = 14;
             this.label7.Text = "1/2";
             // 
-            // btn_proceed
+            // btn_placeOrder
             // 
-            this.btn_proceed.BorderRadius = 12;
-            this.btn_proceed.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btn_proceed.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btn_proceed.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btn_proceed.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btn_proceed.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(98)))), ((int)(((byte)(115)))));
-            this.btn_proceed.Font = new System.Drawing.Font("Roboto SemiCondensed", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_proceed.ForeColor = System.Drawing.Color.White;
-            this.btn_proceed.Location = new System.Drawing.Point(12, 582);
-            this.btn_proceed.Name = "btn_proceed";
-            this.btn_proceed.Size = new System.Drawing.Size(290, 61);
-            this.btn_proceed.TabIndex = 15;
-            this.btn_proceed.Text = "Proceed to Payment";
-            this.btn_proceed.Click += new System.EventHandler(this.btn_proceed_Click);
+            this.btn_placeOrder.BorderRadius = 12;
+            this.btn_placeOrder.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btn_placeOrder.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btn_placeOrder.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btn_placeOrder.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btn_placeOrder.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(98)))), ((int)(((byte)(115)))));
+            this.btn_placeOrder.Font = new System.Drawing.Font("Roboto SemiCondensed", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_placeOrder.ForeColor = System.Drawing.Color.White;
+            this.btn_placeOrder.Location = new System.Drawing.Point(12, 582);
+            this.btn_placeOrder.Name = "btn_placeOrder";
+            this.btn_placeOrder.Size = new System.Drawing.Size(290, 61);
+            this.btn_placeOrder.TabIndex = 15;
+            this.btn_placeOrder.Text = "Place Order";
+            this.btn_placeOrder.Click += new System.EventHandler(this.btn_placeOrder_Click);
             // 
             // btn_cancel
             // 
@@ -328,7 +328,7 @@
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.btn_cancel);
-            this.Controls.Add(this.btn_proceed);
+            this.Controls.Add(this.btn_placeOrder);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.txt_price);
@@ -367,7 +367,7 @@
         private System.Windows.Forms.Label label5;
         private Guna.UI2.WinForms.Guna2TextBox txt_quantity;
         private Guna.UI2.WinForms.Guna2Button btn_cancel;
-        private Guna.UI2.WinForms.Guna2Button btn_proceed;
+        private Guna.UI2.WinForms.Guna2Button btn_placeOrder;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label lb_price;

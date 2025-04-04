@@ -44,6 +44,8 @@ namespace GUI
             cb_pname.DataSource = products;
             cb_pname.DisplayMember = "PNAME";  
             cb_pname.ValueMember = "PID";   
+            date_order.Value = DateTime.Now;
+            date_order.Enabled = false; 
         }
 
         private void cb_pname_SelectedIndexChanged(object sender, EventArgs e)
@@ -102,11 +104,11 @@ namespace GUI
             }
         }
 
-        private void btn_proceed_Click(object sender, EventArgs e)
+        private void btn_placeOrder_Click(object sender, EventArgs e)
         {
             string orderDate = date_order.Value.ToString("dd/MM/yyyy");
 
-            frm_uPayment frm_uPayment = new frm_uPayment(user_id, txt_price.Text, txt_quantity.Text, lb_price.Text, cb_pname.Text ,orderDate);
+            frm_uPayment frm_uPayment = new frm_uPayment(user_id, txt_price.Text, txt_quantity.Text, lb_price.Text, cb_pname.Text, orderDate);
             this.Hide();
             frm_uPayment.ShowDialog();
         }

@@ -31,16 +31,16 @@
             this.components = new System.ComponentModel.Container();
             this.lb_id = new System.Windows.Forms.Label();
             this.btn_cancel = new Guna.UI2.WinForms.Guna2Button();
-            this.btn_placeOrder = new Guna.UI2.WinForms.Guna2Button();
+            this.btn_proceedPayment = new Guna.UI2.WinForms.Guna2Button();
             this.label7 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
-            this.guna2GroupBox1 = new Guna.UI2.WinForms.Guna2GroupBox();
+            this.grp_personalInfo = new Guna.UI2.WinForms.Guna2GroupBox();
             this.radio_bank = new System.Windows.Forms.Label();
             this.radio_cash = new System.Windows.Forms.Label();
-            this.guna2CustomRadioButton2 = new Guna.UI2.WinForms.Guna2CustomRadioButton();
-            this.guna2CustomRadioButton1 = new Guna.UI2.WinForms.Guna2CustomRadioButton();
+            this.rad_bank = new Guna.UI2.WinForms.Guna2CustomRadioButton();
+            this.rd_cash = new Guna.UI2.WinForms.Guna2CustomRadioButton();
             this.label8 = new System.Windows.Forms.Label();
             this.txt_firstname = new Guna.UI2.WinForms.Guna2TextBox();
             this.label6 = new System.Windows.Forms.Label();
@@ -64,7 +64,7 @@
             this.lb_totalPrice = new System.Windows.Forms.Label();
             this.lb_dateOrder = new System.Windows.Forms.Label();
             this.guna2Panel1.SuspendLayout();
-            this.guna2GroupBox1.SuspendLayout();
+            this.grp_personalInfo.SuspendLayout();
             this.SuspendLayout();
             // 
             // lb_id
@@ -94,21 +94,21 @@
             this.btn_cancel.Text = "Cancel";
             this.btn_cancel.Click += new System.EventHandler(this.btn_cancel_Click);
             // 
-            // btn_placeOrder
+            // btn_proceedPayment
             // 
-            this.btn_placeOrder.BorderRadius = 12;
-            this.btn_placeOrder.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btn_placeOrder.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btn_placeOrder.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btn_placeOrder.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btn_placeOrder.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(98)))), ((int)(((byte)(115)))));
-            this.btn_placeOrder.Font = new System.Drawing.Font("Roboto SemiCondensed", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_placeOrder.ForeColor = System.Drawing.Color.White;
-            this.btn_placeOrder.Location = new System.Drawing.Point(28, 580);
-            this.btn_placeOrder.Name = "btn_placeOrder";
-            this.btn_placeOrder.Size = new System.Drawing.Size(290, 61);
-            this.btn_placeOrder.TabIndex = 34;
-            this.btn_placeOrder.Text = "Place Order";
+            this.btn_proceedPayment.BorderRadius = 12;
+            this.btn_proceedPayment.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btn_proceedPayment.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btn_proceedPayment.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btn_proceedPayment.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btn_proceedPayment.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(98)))), ((int)(((byte)(115)))));
+            this.btn_proceedPayment.Font = new System.Drawing.Font("Roboto SemiCondensed", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_proceedPayment.ForeColor = System.Drawing.Color.White;
+            this.btn_proceedPayment.Location = new System.Drawing.Point(28, 580);
+            this.btn_proceedPayment.Name = "btn_proceedPayment";
+            this.btn_proceedPayment.Size = new System.Drawing.Size(290, 61);
+            this.btn_proceedPayment.TabIndex = 34;
+            this.btn_proceedPayment.Text = "Proceed Payment";
             // 
             // label7
             // 
@@ -147,32 +147,32 @@
             // 
             this.guna2Elipse1.BorderRadius = 16;
             // 
-            // guna2GroupBox1
+            // grp_personalInfo
             // 
-            this.guna2GroupBox1.Controls.Add(this.radio_bank);
-            this.guna2GroupBox1.Controls.Add(this.radio_cash);
-            this.guna2GroupBox1.Controls.Add(this.guna2CustomRadioButton2);
-            this.guna2GroupBox1.Controls.Add(this.guna2CustomRadioButton1);
-            this.guna2GroupBox1.Controls.Add(this.label8);
-            this.guna2GroupBox1.Controls.Add(this.txt_firstname);
-            this.guna2GroupBox1.Controls.Add(this.label6);
-            this.guna2GroupBox1.Controls.Add(this.txt_phone);
-            this.guna2GroupBox1.Controls.Add(this.label4);
-            this.guna2GroupBox1.Controls.Add(this.txt_email);
-            this.guna2GroupBox1.Controls.Add(this.label2);
-            this.guna2GroupBox1.Controls.Add(this.txt_lastname);
-            this.guna2GroupBox1.Controls.Add(this.label5);
-            this.guna2GroupBox1.Controls.Add(this.txt_address);
-            this.guna2GroupBox1.Controls.Add(this.label3);
-            this.guna2GroupBox1.CustomBorderColor = System.Drawing.Color.Transparent;
-            this.guna2GroupBox1.FillColor = System.Drawing.Color.Transparent;
-            this.guna2GroupBox1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
-            this.guna2GroupBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-            this.guna2GroupBox1.Location = new System.Drawing.Point(19, 131);
-            this.guna2GroupBox1.Name = "guna2GroupBox1";
-            this.guna2GroupBox1.Size = new System.Drawing.Size(544, 428);
-            this.guna2GroupBox1.TabIndex = 43;
-            this.guna2GroupBox1.Text = "DETAIL INFORMATION";
+            this.grp_personalInfo.Controls.Add(this.radio_bank);
+            this.grp_personalInfo.Controls.Add(this.radio_cash);
+            this.grp_personalInfo.Controls.Add(this.rad_bank);
+            this.grp_personalInfo.Controls.Add(this.rd_cash);
+            this.grp_personalInfo.Controls.Add(this.label8);
+            this.grp_personalInfo.Controls.Add(this.txt_firstname);
+            this.grp_personalInfo.Controls.Add(this.label6);
+            this.grp_personalInfo.Controls.Add(this.txt_phone);
+            this.grp_personalInfo.Controls.Add(this.label4);
+            this.grp_personalInfo.Controls.Add(this.txt_email);
+            this.grp_personalInfo.Controls.Add(this.label2);
+            this.grp_personalInfo.Controls.Add(this.txt_lastname);
+            this.grp_personalInfo.Controls.Add(this.label5);
+            this.grp_personalInfo.Controls.Add(this.txt_address);
+            this.grp_personalInfo.Controls.Add(this.label3);
+            this.grp_personalInfo.CustomBorderColor = System.Drawing.Color.Transparent;
+            this.grp_personalInfo.FillColor = System.Drawing.Color.Transparent;
+            this.grp_personalInfo.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+            this.grp_personalInfo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.grp_personalInfo.Location = new System.Drawing.Point(19, 131);
+            this.grp_personalInfo.Name = "grp_personalInfo";
+            this.grp_personalInfo.Size = new System.Drawing.Size(544, 428);
+            this.grp_personalInfo.TabIndex = 43;
+            this.grp_personalInfo.Text = "DETAIL INFORMATION";
             // 
             // radio_bank
             // 
@@ -192,37 +192,37 @@
             this.radio_cash.TabIndex = 61;
             this.radio_cash.Text = "Cash";
             // 
-            // guna2CustomRadioButton2
+            // rad_bank
             // 
-            this.guna2CustomRadioButton2.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2CustomRadioButton2.CheckedState.BorderThickness = 0;
-            this.guna2CustomRadioButton2.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2CustomRadioButton2.CheckedState.InnerColor = System.Drawing.Color.White;
-            this.guna2CustomRadioButton2.Location = new System.Drawing.Point(16, 392);
-            this.guna2CustomRadioButton2.Name = "guna2CustomRadioButton2";
-            this.guna2CustomRadioButton2.Size = new System.Drawing.Size(20, 20);
-            this.guna2CustomRadioButton2.TabIndex = 60;
-            this.guna2CustomRadioButton2.Text = "guna2CustomRadioButton2";
-            this.guna2CustomRadioButton2.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-            this.guna2CustomRadioButton2.UncheckedState.BorderThickness = 2;
-            this.guna2CustomRadioButton2.UncheckedState.FillColor = System.Drawing.Color.Transparent;
-            this.guna2CustomRadioButton2.UncheckedState.InnerColor = System.Drawing.Color.Transparent;
+            this.rad_bank.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.rad_bank.CheckedState.BorderThickness = 0;
+            this.rad_bank.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.rad_bank.CheckedState.InnerColor = System.Drawing.Color.White;
+            this.rad_bank.Location = new System.Drawing.Point(16, 392);
+            this.rad_bank.Name = "rad_bank";
+            this.rad_bank.Size = new System.Drawing.Size(20, 20);
+            this.rad_bank.TabIndex = 60;
+            this.rad_bank.Text = "guna2CustomRadioButton2";
+            this.rad_bank.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.rad_bank.UncheckedState.BorderThickness = 2;
+            this.rad_bank.UncheckedState.FillColor = System.Drawing.Color.Transparent;
+            this.rad_bank.UncheckedState.InnerColor = System.Drawing.Color.Transparent;
             // 
-            // guna2CustomRadioButton1
+            // rd_cash
             // 
-            this.guna2CustomRadioButton1.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2CustomRadioButton1.CheckedState.BorderThickness = 0;
-            this.guna2CustomRadioButton1.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2CustomRadioButton1.CheckedState.InnerColor = System.Drawing.Color.White;
-            this.guna2CustomRadioButton1.Location = new System.Drawing.Point(16, 352);
-            this.guna2CustomRadioButton1.Name = "guna2CustomRadioButton1";
-            this.guna2CustomRadioButton1.Size = new System.Drawing.Size(20, 20);
-            this.guna2CustomRadioButton1.TabIndex = 59;
-            this.guna2CustomRadioButton1.Text = "guna2CustomRadioButton1";
-            this.guna2CustomRadioButton1.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-            this.guna2CustomRadioButton1.UncheckedState.BorderThickness = 2;
-            this.guna2CustomRadioButton1.UncheckedState.FillColor = System.Drawing.Color.Transparent;
-            this.guna2CustomRadioButton1.UncheckedState.InnerColor = System.Drawing.Color.Transparent;
+            this.rd_cash.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.rd_cash.CheckedState.BorderThickness = 0;
+            this.rd_cash.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.rd_cash.CheckedState.InnerColor = System.Drawing.Color.White;
+            this.rd_cash.Location = new System.Drawing.Point(16, 352);
+            this.rd_cash.Name = "rd_cash";
+            this.rd_cash.Size = new System.Drawing.Size(20, 20);
+            this.rd_cash.TabIndex = 59;
+            this.rd_cash.Text = "guna2CustomRadioButton1";
+            this.rd_cash.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.rd_cash.UncheckedState.BorderThickness = 2;
+            this.rd_cash.UncheckedState.FillColor = System.Drawing.Color.Transparent;
+            this.rd_cash.UncheckedState.InnerColor = System.Drawing.Color.Transparent;
             // 
             // label8
             // 
@@ -499,10 +499,10 @@
             this.Controls.Add(this.label12);
             this.Controls.Add(this.guna2Panel2);
             this.Controls.Add(this.label11);
-            this.Controls.Add(this.guna2GroupBox1);
+            this.Controls.Add(this.grp_personalInfo);
             this.Controls.Add(this.lb_id);
             this.Controls.Add(this.btn_cancel);
-            this.Controls.Add(this.btn_placeOrder);
+            this.Controls.Add(this.btn_proceedPayment);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.guna2Panel1);
             this.Font = new System.Drawing.Font("Roboto Light", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -514,8 +514,8 @@
             this.Load += new System.EventHandler(this.frm_uPayment_Load);
             this.guna2Panel1.ResumeLayout(false);
             this.guna2Panel1.PerformLayout();
-            this.guna2GroupBox1.ResumeLayout(false);
-            this.guna2GroupBox1.PerformLayout();
+            this.grp_personalInfo.ResumeLayout(false);
+            this.grp_personalInfo.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -525,12 +525,12 @@
 
         private System.Windows.Forms.Label lb_id;
         private Guna.UI2.WinForms.Guna2Button btn_cancel;
-        private Guna.UI2.WinForms.Guna2Button btn_placeOrder;
+        private Guna.UI2.WinForms.Guna2Button btn_proceedPayment;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label1;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse1;
-        private Guna.UI2.WinForms.Guna2GroupBox guna2GroupBox1;
+        private Guna.UI2.WinForms.Guna2GroupBox grp_personalInfo;
         private Guna.UI2.WinForms.Guna2TextBox txt_firstname;
         private System.Windows.Forms.Label label6;
         private Guna.UI2.WinForms.Guna2TextBox txt_phone;
@@ -543,8 +543,8 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label radio_bank;
         private System.Windows.Forms.Label radio_cash;
-        private Guna.UI2.WinForms.Guna2CustomRadioButton guna2CustomRadioButton2;
-        private Guna.UI2.WinForms.Guna2CustomRadioButton guna2CustomRadioButton1;
+        private Guna.UI2.WinForms.Guna2CustomRadioButton rad_bank;
+        private Guna.UI2.WinForms.Guna2CustomRadioButton rd_cash;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label11;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel2;

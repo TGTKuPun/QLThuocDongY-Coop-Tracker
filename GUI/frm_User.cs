@@ -129,6 +129,7 @@ namespace GUI
         {
             enable(grp_user, true);
             txt_id.Text = bus_user.generateUserID();
+            txt_id.ReadOnly = true;
             txt_username.Clear();
             txt_fullname.Clear();
             txt_email.Clear();
