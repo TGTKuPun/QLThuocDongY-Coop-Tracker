@@ -30,6 +30,16 @@ namespace GUI
 
         private void btn_cancel_Click(object sender, EventArgs e)
         {
+            if (MessageBox.Show("Are you sure you want to exit?", "Exit Confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            {
+                frm_uMenu frm_UMenu = new frm_uMenu(user_id, username, password);
+                this.Hide();
+                frm_UMenu.ShowDialog();
+            }
+            else
+            {
+                this.Show();
+            }
             Application.Exit();
         }
 

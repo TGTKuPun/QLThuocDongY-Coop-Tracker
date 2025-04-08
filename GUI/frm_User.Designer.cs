@@ -439,6 +439,7 @@
             this.grd.Size = new System.Drawing.Size(1070, 353);
             this.grd.TabIndex = 1;
             this.grd.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.grd_CellClick);
+            this.grd.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.grd_CellContentClick);
             // 
             // guna2Elipse1
             // 

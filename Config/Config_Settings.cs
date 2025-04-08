@@ -20,6 +20,11 @@ namespace Config
             if (System.IO.File.Exists(path))
             {
                 string[] lines = System.IO.File.ReadAllLines(path);
+                if (lines.Length < 5)
+                {
+                    throw new Exception("Config file is not valid. Please check the format.");
+                }
+
                 if (lines.Length >= 5)
                 {  
                     Server = lines[0].Trim();

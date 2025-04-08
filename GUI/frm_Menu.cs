@@ -47,8 +47,7 @@ namespace GUI
                 "Are you sure want to sign out?",
                 "Confirm Sign Out",
             MessageBoxButtons.YesNo,
-            MessageBoxIcon.Question
-);
+            MessageBoxIcon.Question);
 
             if (result == DialogResult.Yes)
             {

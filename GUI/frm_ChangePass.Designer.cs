@@ -40,6 +40,7 @@
             this.txt_new_password = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2AnimateWindow1 = new Guna.UI2.WinForms.Guna2AnimateWindow(this.components);
             this.btn_exit = new Guna.UI2.WinForms.Guna2CircleButton();
+            this.guna2AnimateWindow2 = new Guna.UI2.WinForms.Guna2AnimateWindow(this.components);
             this.SuspendLayout();
             // 
             // guna2CircleButton1
@@ -52,7 +53,7 @@
             this.guna2CircleButton1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(98)))), ((int)(((byte)(115)))));
             this.guna2CircleButton1.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.guna2CircleButton1.ForeColor = System.Drawing.Color.White;
-            this.guna2CircleButton1.Location = new System.Drawing.Point(82, -78);
+            this.guna2CircleButton1.Location = new System.Drawing.Point(86, -78);
             this.guna2CircleButton1.Name = "guna2CircleButton1";
             this.guna2CircleButton1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             this.guna2CircleButton1.Size = new System.Drawing.Size(373, 148);
@@ -64,11 +65,11 @@
             this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(98)))), ((int)(((byte)(115)))));
             this.label1.Font = new System.Drawing.Font("Roboto SemiCondensed", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(247)))), ((int)(((byte)(251)))));
-            this.label1.Location = new System.Drawing.Point(221, 9);
+            this.label1.Location = new System.Drawing.Point(225, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(116, 48);
+            this.label1.Size = new System.Drawing.Size(132, 48);
             this.label1.TabIndex = 2;
-            this.label1.Text = "Reset";
+            this.label1.Text = "RESET";
             // 
             // txt_email
             // 
@@ -92,7 +93,7 @@
             this.txt_email.PlaceholderText = "Your Email";
             this.txt_email.SelectedText = "";
             this.txt_email.Size = new System.Drawing.Size(373, 53);
-            this.txt_email.TabIndex = 3;
+            this.txt_email.TabIndex = 0;
             // 
             // txt_old_password
             // 
@@ -113,10 +114,10 @@
             this.txt_old_password.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txt_old_password.Name = "txt_old_password";
             this.txt_old_password.PlaceholderForeColor = System.Drawing.Color.Gray;
-            this.txt_old_password.PlaceholderText = "Old Password";
+            this.txt_old_password.PlaceholderText = "New Password";
             this.txt_old_password.SelectedText = "";
             this.txt_old_password.Size = new System.Drawing.Size(373, 53);
-            this.txt_old_password.TabIndex = 4;
+            this.txt_old_password.TabIndex = 1;
             this.txt_old_password.UseSystemPasswordChar = true;
             // 
             // btn_ChangePass
@@ -133,7 +134,7 @@
             this.btn_ChangePass.Location = new System.Drawing.Point(82, 359);
             this.btn_ChangePass.Name = "btn_ChangePass";
             this.btn_ChangePass.Size = new System.Drawing.Size(373, 54);
-            this.btn_ChangePass.TabIndex = 5;
+            this.btn_ChangePass.TabIndex = 3;
             this.btn_ChangePass.Text = "Change Password";
             this.btn_ChangePass.Click += new System.EventHandler(this.btn_ChangePass_Click);
             // 
@@ -141,11 +142,11 @@
             // 
             this.btn_GoBack.AutoSize = true;
             this.btn_GoBack.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_GoBack.Font = new System.Drawing.Font("Roboto Light", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_GoBack.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(3)))), ((int)(((byte)(3)))));
-            this.btn_GoBack.Location = new System.Drawing.Point(224, 428);
+            this.btn_GoBack.Font = new System.Drawing.Font("Roboto SemiCondensed", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_GoBack.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(98)))), ((int)(((byte)(115)))));
+            this.btn_GoBack.Location = new System.Drawing.Point(227, 426);
             this.btn_GoBack.Name = "btn_GoBack";
-            this.btn_GoBack.Size = new System.Drawing.Size(96, 28);
+            this.btn_GoBack.Size = new System.Drawing.Size(114, 34);
             this.btn_GoBack.TabIndex = 7;
             this.btn_GoBack.Text = "Go Back";
             this.btn_GoBack.Click += new System.EventHandler(this.btn_GoBack_Click);
@@ -174,10 +175,10 @@
             this.txt_new_password.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txt_new_password.Name = "txt_new_password";
             this.txt_new_password.PlaceholderForeColor = System.Drawing.Color.Gray;
-            this.txt_new_password.PlaceholderText = "New Password";
+            this.txt_new_password.PlaceholderText = "Type Again New Password";
             this.txt_new_password.SelectedText = "";
             this.txt_new_password.Size = new System.Drawing.Size(373, 53);
-            this.txt_new_password.TabIndex = 9;
+            this.txt_new_password.TabIndex = 2;
             this.txt_new_password.UseSystemPasswordChar = true;
             // 
             // btn_exit
@@ -235,5 +236,6 @@
         private Guna.UI2.WinForms.Guna2TextBox txt_new_password;
         private Guna.UI2.WinForms.Guna2AnimateWindow guna2AnimateWindow1;
         private Guna.UI2.WinForms.Guna2CircleButton btn_exit;
+        private Guna.UI2.WinForms.Guna2AnimateWindow guna2AnimateWindow2;
     }
 }

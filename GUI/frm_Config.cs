@@ -79,7 +79,7 @@ namespace GUI
                 return;
             }
 
-            File.WriteAllLines("config.txt", new string[] { server, database, username, password, authenMode });
+            File.WriteAllLines("Config.txt", new string[] { server, database, username, password, authenMode });
 
             Config_Settings.Server = server;
             Config_Settings.Database = database;
@@ -93,6 +93,14 @@ namespace GUI
 
         private void btn_cancel_Click(object sender, EventArgs e)
         {
+            if (MessageBox.Show("Are you sure you want to exit?", "Exit Confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            {
+                Application.Exit();
+            }
+            else
+            {
+                this.Show();
+            }
             Application.Exit();
         }
 

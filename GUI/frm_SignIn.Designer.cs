@@ -32,13 +32,14 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frm_SignIn));
             this.btn_signIn = new Guna.UI2.WinForms.Guna2Button();
             this.txt_username = new Guna.UI2.WinForms.Guna2TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.guna2CircleButton1 = new Guna.UI2.WinForms.Guna2CircleButton();
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.txt_password = new Guna.UI2.WinForms.Guna2TextBox();
             this.btn_exit = new Guna.UI2.WinForms.Guna2CircleButton();
             this.lb_changePassword = new System.Windows.Forms.Label();
             this.btn_reset = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.guna2Elipse2 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
+            this.label1 = new System.Windows.Forms.Label();
+            this.guna2CircleButton1 = new Guna.UI2.WinForms.Guna2CircleButton();
             this.SuspendLayout();
             // 
             // btn_signIn
@@ -55,7 +56,7 @@
             this.btn_signIn.Location = new System.Drawing.Point(86, 368);
             this.btn_signIn.Name = "btn_signIn";
             this.btn_signIn.Size = new System.Drawing.Size(373, 54);
-            this.btn_signIn.TabIndex = 16;
+            this.btn_signIn.TabIndex = 3;
             this.btn_signIn.Text = "Sign In";
             this.btn_signIn.Click += new System.EventHandler(this.btn_signIn_Click);
             // 
@@ -81,35 +82,7 @@
             this.txt_username.PlaceholderText = "Username";
             this.txt_username.SelectedText = "";
             this.txt_username.Size = new System.Drawing.Size(373, 53);
-            this.txt_username.TabIndex = 15;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(98)))), ((int)(((byte)(115)))));
-            this.label1.Font = new System.Drawing.Font("Roboto SemiCondensed", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(247)))), ((int)(((byte)(251)))));
-            this.label1.Location = new System.Drawing.Point(235, 12);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(113, 48);
-            this.label1.TabIndex = 13;
-            this.label1.Text = "Login";
-            // 
-            // guna2CircleButton1
-            // 
-            this.guna2CircleButton1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2CircleButton1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2CircleButton1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2CircleButton1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2CircleButton1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2CircleButton1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(98)))), ((int)(((byte)(115)))));
-            this.guna2CircleButton1.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2CircleButton1.ForeColor = System.Drawing.Color.White;
-            this.guna2CircleButton1.Location = new System.Drawing.Point(86, -79);
-            this.guna2CircleButton1.Name = "guna2CircleButton1";
-            this.guna2CircleButton1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.guna2CircleButton1.Size = new System.Drawing.Size(373, 148);
-            this.guna2CircleButton1.TabIndex = 12;
+            this.txt_username.TabIndex = 0;
             // 
             // guna2Elipse1
             // 
@@ -138,7 +111,7 @@
             this.txt_password.PlaceholderText = "Password";
             this.txt_password.SelectedText = "";
             this.txt_password.Size = new System.Drawing.Size(373, 53);
-            this.txt_password.TabIndex = 18;
+            this.txt_password.TabIndex = 1;
             this.txt_password.UseSystemPasswordChar = true;
             // 
             // btn_exit
@@ -149,7 +122,7 @@
             this.btn_exit.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btn_exit.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btn_exit.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(247)))), ((int)(((byte)(251)))));
-            this.btn_exit.Font = new System.Drawing.Font("Roboto SemiCondensed", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_exit.Font = new System.Drawing.Font("Roboto Light", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_exit.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(3)))), ((int)(((byte)(3)))));
             this.btn_exit.Image = ((System.Drawing.Image)(resources.GetObject("btn_exit.Image")));
             this.btn_exit.Location = new System.Drawing.Point(466, 12);
@@ -176,12 +149,46 @@
             this.btn_reset.BackColor = System.Drawing.Color.Transparent;
             this.btn_reset.Font = new System.Drawing.Font("Roboto SemiCondensed", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_reset.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(98)))), ((int)(((byte)(115)))));
-            this.btn_reset.Location = new System.Drawing.Point(243, 428);
+            this.btn_reset.Location = new System.Drawing.Point(245, 438);
             this.btn_reset.Name = "btn_reset";
             this.btn_reset.Size = new System.Drawing.Size(69, 35);
             this.btn_reset.TabIndex = 21;
             this.btn_reset.Text = "Reset";
             this.btn_reset.Click += new System.EventHandler(this.btn_reset_Click);
+            // 
+            // guna2Elipse2
+            // 
+            this.guna2Elipse2.BorderRadius = 15;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(98)))), ((int)(((byte)(115)))));
+            this.label1.Font = new System.Drawing.Font("Roboto SemiCondensed", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(247)))), ((int)(((byte)(251)))));
+            this.label1.Location = new System.Drawing.Point(225, 9);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(127, 48);
+            this.label1.TabIndex = 23;
+            this.label1.Text = "LOGIN";
+            this.label1.Click += new System.EventHandler(this.label1_Click_2);
+            // 
+            // guna2CircleButton1
+            // 
+            this.guna2CircleButton1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2CircleButton1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.guna2CircleButton1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.guna2CircleButton1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2CircleButton1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.guna2CircleButton1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(98)))), ((int)(((byte)(115)))));
+            this.guna2CircleButton1.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.guna2CircleButton1.ForeColor = System.Drawing.Color.White;
+            this.guna2CircleButton1.Location = new System.Drawing.Point(86, -78);
+            this.guna2CircleButton1.Name = "guna2CircleButton1";
+            this.guna2CircleButton1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.guna2CircleButton1.Size = new System.Drawing.Size(373, 148);
+            this.guna2CircleButton1.TabIndex = 22;
+            this.guna2CircleButton1.Click += new System.EventHandler(this.guna2CircleButton1_Click);
             // 
             // frm_SignIn
             // 
@@ -189,19 +196,21 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(247)))), ((int)(((byte)(251)))));
             this.ClientSize = new System.Drawing.Size(537, 522);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.guna2CircleButton1);
             this.Controls.Add(this.btn_reset);
             this.Controls.Add(this.lb_changePassword);
             this.Controls.Add(this.btn_signIn);
             this.Controls.Add(this.txt_username);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.guna2CircleButton1);
             this.Controls.Add(this.txt_password);
             this.Controls.Add(this.btn_exit);
             this.Font = new System.Drawing.Font("Roboto Light", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Location = new System.Drawing.Point(227, 426);
             this.Name = "frm_SignIn";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frm_SignIn";
+            this.Load += new System.EventHandler(this.frm_SignIn_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -210,12 +219,13 @@
         #endregion
         private Guna.UI2.WinForms.Guna2Button btn_signIn;
         private Guna.UI2.WinForms.Guna2TextBox txt_username;
-        private System.Windows.Forms.Label label1;
-        private Guna.UI2.WinForms.Guna2CircleButton guna2CircleButton1;
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse1;
         private Guna.UI2.WinForms.Guna2TextBox txt_password;
         private Guna.UI2.WinForms.Guna2CircleButton btn_exit;
         private System.Windows.Forms.Label lb_changePassword;
         private Guna.UI2.WinForms.Guna2HtmlLabel btn_reset;
+        private Guna.UI2.WinForms.Guna2Elipse guna2Elipse2;
+        private System.Windows.Forms.Label label1;
+        private Guna.UI2.WinForms.Guna2CircleButton guna2CircleButton1;
     }
 }

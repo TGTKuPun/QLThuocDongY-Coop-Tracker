@@ -25,6 +25,14 @@ namespace GUI
 
         private void btn_exit_Click(object sender, EventArgs e)
         {
+            if (MessageBox.Show("Are you sure you want to exit?", "Exit Confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            {
+                Application.Exit();
+            }
+            else
+            {
+                this.Show();
+            }
             Application.Exit();
         }
 
@@ -57,8 +65,8 @@ namespace GUI
                 {
                     MessageBox.Show($"Hello {username} !", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     this.Hide();
-                    frm_uOrder user_Order = new frm_uOrder(user.USERID, username, password);
-                    user_Order.ShowDialog();
+                    frm_uMenu user_Menu = new frm_uMenu(user.USERID, username, password);
+                    user_Menu.ShowDialog();
                 }
             }
             else
@@ -83,6 +91,20 @@ namespace GUI
             frm_ChangePass form = new frm_ChangePass(this);
             this.Hide();
             form.ShowDialog();
+        }
+
+        private void frm_SignIn_Load(object sender, EventArgs e)
+        {
+        }
+
+        private void label1_Click_2(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2CircleButton1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

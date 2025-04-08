@@ -19,7 +19,7 @@ namespace GUI
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
 
-            string configPath = "config.txt";
+            string configPath = "Config.txt";
             if (File.Exists(configPath))
             {
                 Config_Settings.LoadConfig(configPath);

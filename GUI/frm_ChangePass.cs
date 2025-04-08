@@ -39,7 +39,7 @@ namespace GUI
 
             if (dt_user != null && Identity)
             {   
-                if (new_password != dt_user.PASSWORD)
+                if (new_password == old_password)
                 {
                     bus_formChangePass.changePassword(email, new_password);
                     MessageBox.Show("Password changed successfully", "Announcement", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -48,7 +48,7 @@ namespace GUI
                 }
                 else
                 {
-                    MessageBox.Show("New password must be different from the old one", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show("Two password must be the same", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
             else
