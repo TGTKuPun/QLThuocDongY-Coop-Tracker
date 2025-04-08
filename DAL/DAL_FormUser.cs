@@ -29,8 +29,14 @@ namespace DAL
         {
             string sql = "SELECT COUNT(*) FROM tb_useraccount";
             DataTable dt = Connection.selectQuery(sql);
+            int count = 0;
 
-            int count = int.Parse(dt.Rows[0][0].ToString()) + 1; 
+            if (dt.Rows.Count == 0)
+            {
+                return "U001";
+            }
+
+            count = int.Parse(dt.Rows[0][0].ToString()) + 1; 
             return "U" + count.ToString("D3"); 
         }
 

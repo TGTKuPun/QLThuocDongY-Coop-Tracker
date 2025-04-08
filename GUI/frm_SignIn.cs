@@ -48,14 +48,14 @@ namespace GUI
             {
                 if (isAdmin)
                 {
-                    MessageBox.Show($"Hello Admin !", "Announcement", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show($"Hello Admin !", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     this.Hide();
                     frm_Menu menu = new frm_Menu(username, password);
                     menu.ShowDialog();
                 }
                 else
                 {
-                    MessageBox.Show($"Hello User !", "Announcement", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show($"Hello {username} !", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     this.Hide();
                     frm_uOrder user_Order = new frm_uOrder(user.USERID, username, password);
                     user_Order.ShowDialog();

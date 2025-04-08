@@ -69,13 +69,13 @@ namespace GUI
 
             if (string.IsNullOrEmpty(server) || string.IsNullOrEmpty(database))
             {
-                MessageBox.Show("Server và Database không được để trống!", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Server and Database cannot be empty!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
 
             if (!chk_windowAuthen.Checked && (string.IsNullOrEmpty(username) || string.IsNullOrEmpty(password)))
             {
-                MessageBox.Show("Username và Password không được để trống khi sử dụng SQL Authentication!", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Username and Password cannot be empty when using SQL Authentication!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
 
@@ -87,13 +87,18 @@ namespace GUI
             Config_Settings.Username = username;
             Config_Settings.Password = password;
 
-            MessageBox.Show("Cấu hình đã được lưu!", "Thành công", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            MessageBox.Show("Configuration has been saved!", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Information);
             this.Close();
         }
 
         private void btn_cancel_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void chk_windowAuthen_CheckedChanged(object sender, EventArgs e)
+        {   
+            ToggleAuthenticationFields();
         }
     }
 }

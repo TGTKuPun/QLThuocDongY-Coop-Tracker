@@ -62,11 +62,11 @@
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(98)))), ((int)(((byte)(115)))));
-            this.label1.Font = new System.Drawing.Font("Roboto SemiCondensed", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Roboto SemiCondensed", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(247)))), ((int)(((byte)(251)))));
-            this.label1.Location = new System.Drawing.Point(231, 12);
+            this.label1.Location = new System.Drawing.Point(221, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(109, 44);
+            this.label1.Size = new System.Drawing.Size(116, 48);
             this.label1.TabIndex = 2;
             this.label1.Text = "Reset";
             // 
@@ -86,7 +86,7 @@
             this.txt_email.IconRight = ((System.Drawing.Image)(resources.GetObject("txt_email.IconRight")));
             this.txt_email.IconRightOffset = new System.Drawing.Point(15, 0);
             this.txt_email.Location = new System.Drawing.Point(82, 132);
-            this.txt_email.Margin = new System.Windows.Forms.Padding(4);
+            this.txt_email.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txt_email.Name = "txt_email";
             this.txt_email.PlaceholderForeColor = System.Drawing.Color.Gray;
             this.txt_email.PlaceholderText = "Your Email";
@@ -110,7 +110,7 @@
             this.txt_old_password.IconRight = ((System.Drawing.Image)(resources.GetObject("txt_old_password.IconRight")));
             this.txt_old_password.IconRightOffset = new System.Drawing.Point(15, 0);
             this.txt_old_password.Location = new System.Drawing.Point(82, 215);
-            this.txt_old_password.Margin = new System.Windows.Forms.Padding(4);
+            this.txt_old_password.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txt_old_password.Name = "txt_old_password";
             this.txt_old_password.PlaceholderForeColor = System.Drawing.Color.Gray;
             this.txt_old_password.PlaceholderText = "Old Password";
@@ -128,7 +128,7 @@
             this.btn_ChangePass.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btn_ChangePass.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btn_ChangePass.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(98)))), ((int)(((byte)(115)))));
-            this.btn_ChangePass.Font = new System.Drawing.Font("Roboto SemiCondensed", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_ChangePass.Font = new System.Drawing.Font("Roboto SemiCondensed", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_ChangePass.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(247)))), ((int)(((byte)(251)))));
             this.btn_ChangePass.Location = new System.Drawing.Point(82, 359);
             this.btn_ChangePass.Name = "btn_ChangePass";
@@ -143,7 +143,7 @@
             this.btn_GoBack.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_GoBack.Font = new System.Drawing.Font("Roboto Light", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_GoBack.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(3)))), ((int)(((byte)(3)))));
-            this.btn_GoBack.Location = new System.Drawing.Point(234, 428);
+            this.btn_GoBack.Location = new System.Drawing.Point(224, 428);
             this.btn_GoBack.Name = "btn_GoBack";
             this.btn_GoBack.Size = new System.Drawing.Size(96, 28);
             this.btn_GoBack.TabIndex = 7;
@@ -171,7 +171,7 @@
             this.txt_new_password.IconRight = ((System.Drawing.Image)(resources.GetObject("txt_new_password.IconRight")));
             this.txt_new_password.IconRightOffset = new System.Drawing.Point(15, 0);
             this.txt_new_password.Location = new System.Drawing.Point(82, 276);
-            this.txt_new_password.Margin = new System.Windows.Forms.Padding(4);
+            this.txt_new_password.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txt_new_password.Name = "txt_new_password";
             this.txt_new_password.PlaceholderForeColor = System.Drawing.Color.Gray;
             this.txt_new_password.PlaceholderText = "New Password";

@@ -144,6 +144,7 @@
             this.chk_windowAuthen.UncheckedState.BorderRadius = 0;
             this.chk_windowAuthen.UncheckedState.BorderThickness = 0;
             this.chk_windowAuthen.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.chk_windowAuthen.CheckedChanged += new System.EventHandler(this.chk_windowAuthen_CheckedChanged);
             // 
             // label1
             // 
@@ -226,7 +227,7 @@
             this.btn_cancel.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btn_cancel.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btn_cancel.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btn_cancel.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(98)))), ((int)(((byte)(115)))));
+            this.btn_cancel.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(65)))), ((int)(((byte)(52)))));
             this.btn_cancel.Font = new System.Drawing.Font("Roboto SemiCondensed", 13.8F, System.Drawing.FontStyle.Bold);
             this.btn_cancel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(247)))), ((int)(((byte)(251)))));
             this.btn_cancel.Location = new System.Drawing.Point(239, 417);

@@ -97,6 +97,7 @@ namespace GUI
                 user.PASSWORD = "******";
             }
 
+            txt_id.ReadOnly = true;
             grd.AutoGenerateColumns = false;
             grd.DataSource = userList;
         }

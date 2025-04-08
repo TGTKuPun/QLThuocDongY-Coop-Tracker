@@ -50,7 +50,7 @@
             this.btn_signIn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btn_signIn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btn_signIn.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(98)))), ((int)(((byte)(115)))));
-            this.btn_signIn.Font = new System.Drawing.Font("Roboto SemiCondensed", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_signIn.Font = new System.Drawing.Font("Roboto SemiCondensed", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_signIn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(247)))), ((int)(((byte)(251)))));
             this.btn_signIn.Location = new System.Drawing.Point(86, 368);
             this.btn_signIn.Name = "btn_signIn";
@@ -87,11 +87,11 @@
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(98)))), ((int)(((byte)(115)))));
-            this.label1.Font = new System.Drawing.Font("Roboto SemiCondensed", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Roboto SemiCondensed", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(247)))), ((int)(((byte)(251)))));
-            this.label1.Location = new System.Drawing.Point(235, 11);
+            this.label1.Location = new System.Drawing.Point(235, 12);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(107, 44);
+            this.label1.Size = new System.Drawing.Size(113, 48);
             this.label1.TabIndex = 13;
             this.label1.Text = "Login";
             // 
@@ -162,8 +162,9 @@
             // lb_changePassword
             // 
             this.lb_changePassword.AutoSize = true;
+            this.lb_changePassword.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lb_changePassword.Font = new System.Drawing.Font("Roboto Light", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_changePassword.Location = new System.Drawing.Point(292, 297);
+            this.lb_changePassword.Location = new System.Drawing.Point(306, 297);
             this.lb_changePassword.Name = "lb_changePassword";
             this.lb_changePassword.Size = new System.Drawing.Size(153, 22);
             this.lb_changePassword.TabIndex = 20;
@@ -173,11 +174,11 @@
             // btn_reset
             // 
             this.btn_reset.BackColor = System.Drawing.Color.Transparent;
-            this.btn_reset.Font = new System.Drawing.Font("Roboto SemiCondensed", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_reset.Font = new System.Drawing.Font("Roboto SemiCondensed", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_reset.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(98)))), ((int)(((byte)(115)))));
-            this.btn_reset.Location = new System.Drawing.Point(252, 428);
+            this.btn_reset.Location = new System.Drawing.Point(243, 428);
             this.btn_reset.Name = "btn_reset";
-            this.btn_reset.Size = new System.Drawing.Size(59, 30);
+            this.btn_reset.Size = new System.Drawing.Size(69, 35);
             this.btn_reset.TabIndex = 21;
             this.btn_reset.Text = "Reset";
             this.btn_reset.Click += new System.EventHandler(this.btn_reset_Click);

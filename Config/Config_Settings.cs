@@ -16,12 +16,12 @@ namespace Config
         public static string Authen = "sql";
 
         public static void LoadConfig(string path)
-        {
+        {   
             if (System.IO.File.Exists(path))
             {
                 string[] lines = System.IO.File.ReadAllLines(path);
                 if (lines.Length >= 5)
-                {
+                {  
                     Server = lines[0].Trim();
                     Database = lines[1].Trim();
                     Username = lines[2].Trim();
