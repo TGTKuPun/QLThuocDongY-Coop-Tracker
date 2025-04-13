@@ -116,9 +116,11 @@ namespace GUI
 
         private void btn_placeOrder_Click(object sender, EventArgs e)
         {
-            string orderDate = date_order.Value.ToString("dd/MM/yyyy");
-
-            frm_uPayment frm_uPayment = new frm_uPayment(user_id, txt_price.Text, txt_quantity.Text, lb_price.Text, cb_pname.Text, orderDate);
+            string orderDate = date_order.Value.ToString("yyyy/MM/dd");
+            float price = float.Parse(txt_price.Text);
+            float quantity = float.Parse(txt_quantity.Text);
+            float totalPrice = price * quantity;
+            frm_uPayment frm_uPayment = new frm_uPayment(user_id, price.ToString(), quantity.ToString(), lb_price.Text, cb_pname.Text, orderDate, cb_pname.SelectedValue.ToString(), totalPrice, username, password);
             this.Hide();
             frm_uPayment.ShowDialog();
         }

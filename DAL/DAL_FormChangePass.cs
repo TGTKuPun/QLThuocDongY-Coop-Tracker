@@ -13,7 +13,7 @@ namespace DAL
         public DTO_FormChangePass getInfo(string email)
         {
 
-            string sql = $"SELECT email, matkhau FROM tb_useraccount WHERE email = '{email}'";
+            string sql = $"SELECT email, Passs FROM tb_useraccount WHERE email = '{email}'";
 
             DataTable dt = Connection.selectQuery(sql);
 
@@ -21,7 +21,7 @@ namespace DAL
             {
                 return new DTO_FormChangePass(
                     dt.Rows[0]["email"].ToString().Trim(), /*assign data to variable 'email'*/
-                    dt.Rows[0]["matkhau"].ToString().Trim() /*assign data to variable 'password'*/
+                    dt.Rows[0]["Pass"].ToString().Trim() /*assign data to variable 'password'*/
                 );
             }
             else return null;
@@ -29,7 +29,7 @@ namespace DAL
 
         public void changePassword (string email, string new_password)
         {
-            string sql = $"UPDATE tb_useraccount SET matkhau = '{new_password}' WHERE email = '{email}' ";
+            string sql = $"UPDATE tb_useraccount SET Pass = '{new_password}' WHERE email = '{email}' ";
 
             Connection.actionQuery(sql);
         }

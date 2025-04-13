@@ -12,7 +12,7 @@ namespace DAL
     {
         public DataTable getProduct ()
         {
-            string sql = "SELECT RTRIM(id_thuoc) AS id_thuoc, ten_thuoc, gia_thuoc, donvitinh, soluong FROM tb_thuoc";
+            string sql = "SELECT RTRIM(id_product) AS id_product, Product_Name, Prices, Type, Quantity FROM tb_product";
 
             return Connection.selectQuery(sql);
         }

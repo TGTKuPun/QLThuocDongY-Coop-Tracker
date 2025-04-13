@@ -21,11 +21,11 @@ namespace BUS
             foreach (DataRow row in dt.Rows)
             {
                 DTO_uMenu uOrder = new DTO_uMenu(
-                    row["id_donhang"].ToString(),
+                    row["id_order"].ToString(),
                     row["id_user"].ToString(),
-                    row["trangthai"].ToString(),
-                    Convert.ToDateTime(row["ngaymua"]),
-                    row["tongtien"].ToString(),
+                    row["Status"].ToString(),
+                    Convert.ToDateTime(row["order_date"]),
+                    row["total_price"].ToString(),
                     row["firstname"].ToString(),
                     row["lastname"].ToString(),
                     row["email"].ToString(),
@@ -41,7 +41,7 @@ namespace BUS
         public bool cancelOrder(string orderID) {
 
             DTO_uMenu order = dal_uMenu.getOrderByOrderId(orderID);
-            if (order != null && order.STATUS == "Chờ xử lý")
+            if (order != null && (order.STATUS == "Chờ xử lý" || order.STATUS == ""))
             {
                 dal_uMenu.delOrderByOrderId(orderID);
                 return true;

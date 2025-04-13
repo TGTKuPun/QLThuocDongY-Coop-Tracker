@@ -55,6 +55,7 @@
             this.grd = new System.Windows.Forms.DataGridView();
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2ContextMenuStrip1 = new Guna.UI2.WinForms.Guna2ContextMenuStrip();
+            this.lb_goback = new System.Windows.Forms.Label();
             this.grp_btn.SuspendLayout();
             this.grp_user.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
@@ -229,6 +230,7 @@
             // 
             // grp_user
             // 
+            this.grp_user.Controls.Add(this.lb_goback);
             this.grp_user.Controls.Add(this.label3);
             this.grp_user.Controls.Add(this.txt_password);
             this.grp_user.Controls.Add(this.btn_Exit);
@@ -461,6 +463,18 @@
             this.guna2ContextMenuStrip1.RenderStyle.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
             this.guna2ContextMenuStrip1.Size = new System.Drawing.Size(61, 4);
             // 
+            // lb_goback
+            // 
+            this.lb_goback.AutoSize = true;
+            this.lb_goback.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(98)))), ((int)(((byte)(115)))));
+            this.lb_goback.Font = new System.Drawing.Font("Segoe UI", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_goback.Location = new System.Drawing.Point(881, 0);
+            this.lb_goback.Name = "lb_goback";
+            this.lb_goback.Size = new System.Drawing.Size(149, 46);
+            this.lb_goback.TabIndex = 39;
+            this.lb_goback.Text = "Go Back";
+            this.lb_goback.Click += new System.EventHandler(this.lb_goback_Click);
+            // 
             // frm_User
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 22F);
@@ -514,5 +528,6 @@
         private System.Windows.Forms.Label label3;
         private Guna.UI2.WinForms.Guna2TextBox txt_password;
         private Guna.UI2.WinForms.Guna2ContextMenuStrip guna2ContextMenuStrip1;
+        private System.Windows.Forms.Label lb_goback;
     }
 }

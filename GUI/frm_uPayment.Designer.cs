@@ -37,10 +37,10 @@
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.grp_personalInfo = new Guna.UI2.WinForms.Guna2GroupBox();
-            this.radio_bank = new System.Windows.Forms.Label();
-            this.radio_cash = new System.Windows.Forms.Label();
-            this.rad_bank = new Guna.UI2.WinForms.Guna2CustomRadioButton();
-            this.rd_cash = new Guna.UI2.WinForms.Guna2CustomRadioButton();
+            this.lbbank = new System.Windows.Forms.Label();
+            this.lbcash = new System.Windows.Forms.Label();
+            this.radio_bank = new Guna.UI2.WinForms.Guna2CustomRadioButton();
+            this.radio_cash = new Guna.UI2.WinForms.Guna2CustomRadioButton();
             this.label8 = new System.Windows.Forms.Label();
             this.txt_firstname = new Guna.UI2.WinForms.Guna2TextBox();
             this.label6 = new System.Windows.Forms.Label();
@@ -70,10 +70,10 @@
             // lb_id
             // 
             this.lb_id.AutoSize = true;
-            this.lb_id.Font = new System.Drawing.Font("Roboto Light", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_id.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_id.Location = new System.Drawing.Point(16, 652);
             this.lb_id.Name = "lb_id";
-            this.lb_id.Size = new System.Drawing.Size(86, 18);
+            this.lb_id.Size = new System.Drawing.Size(89, 18);
             this.lb_id.TabIndex = 42;
             this.lb_id.Text = "Unknown ID";
             // 
@@ -85,7 +85,7 @@
             this.btn_cancel.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btn_cancel.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btn_cancel.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(90)))), ((int)(((byte)(56)))));
-            this.btn_cancel.Font = new System.Drawing.Font("Roboto SemiCondensed", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_cancel.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_cancel.ForeColor = System.Drawing.Color.White;
             this.btn_cancel.Location = new System.Drawing.Point(353, 580);
             this.btn_cancel.Name = "btn_cancel";
@@ -102,23 +102,24 @@
             this.btn_proceedPayment.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btn_proceedPayment.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btn_proceedPayment.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(98)))), ((int)(((byte)(115)))));
-            this.btn_proceedPayment.Font = new System.Drawing.Font("Roboto SemiCondensed", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_proceedPayment.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_proceedPayment.ForeColor = System.Drawing.Color.White;
             this.btn_proceedPayment.Location = new System.Drawing.Point(28, 580);
             this.btn_proceedPayment.Name = "btn_proceedPayment";
             this.btn_proceedPayment.Size = new System.Drawing.Size(290, 61);
             this.btn_proceedPayment.TabIndex = 34;
             this.btn_proceedPayment.Text = "Proceed Payment";
+            this.btn_proceedPayment.Click += new System.EventHandler(this.btn_proceedPayment_Click);
             // 
             // label7
             // 
             this.label7.AutoSize = true;
             this.label7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(247)))), ((int)(((byte)(251)))));
-            this.label7.Font = new System.Drawing.Font("Roboto SemiCondensed", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(98)))), ((int)(((byte)(115)))));
             this.label7.Location = new System.Drawing.Point(462, 91);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(60, 37);
+            this.label7.Size = new System.Drawing.Size(60, 36);
             this.label7.TabIndex = 33;
             this.label7.Text = "2/2";
             // 
@@ -126,11 +127,11 @@
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(98)))), ((int)(((byte)(115)))));
-            this.label1.Font = new System.Drawing.Font("Roboto SemiCondensed", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(14, 12);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(273, 37);
+            this.label1.Size = new System.Drawing.Size(329, 36);
             this.label1.TabIndex = 0;
             this.label1.Text = "PAYMENT PROCESS";
             // 
@@ -149,10 +150,10 @@
             // 
             // grp_personalInfo
             // 
+            this.grp_personalInfo.Controls.Add(this.lbbank);
+            this.grp_personalInfo.Controls.Add(this.lbcash);
             this.grp_personalInfo.Controls.Add(this.radio_bank);
             this.grp_personalInfo.Controls.Add(this.radio_cash);
-            this.grp_personalInfo.Controls.Add(this.rad_bank);
-            this.grp_personalInfo.Controls.Add(this.rd_cash);
             this.grp_personalInfo.Controls.Add(this.label8);
             this.grp_personalInfo.Controls.Add(this.txt_firstname);
             this.grp_personalInfo.Controls.Add(this.label6);
@@ -174,55 +175,55 @@
             this.grp_personalInfo.TabIndex = 43;
             this.grp_personalInfo.Text = "DETAIL INFORMATION";
             // 
+            // lbbank
+            // 
+            this.lbbank.AutoSize = true;
+            this.lbbank.Location = new System.Drawing.Point(43, 392);
+            this.lbbank.Name = "lbbank";
+            this.lbbank.Size = new System.Drawing.Size(69, 20);
+            this.lbbank.TabIndex = 62;
+            this.lbbank.Text = "Bank QR";
+            // 
+            // lbcash
+            // 
+            this.lbcash.AutoSize = true;
+            this.lbcash.Location = new System.Drawing.Point(42, 352);
+            this.lbcash.Name = "lbcash";
+            this.lbcash.Size = new System.Drawing.Size(42, 20);
+            this.lbcash.TabIndex = 61;
+            this.lbcash.Text = "Cash";
+            // 
             // radio_bank
             // 
-            this.radio_bank.AutoSize = true;
-            this.radio_bank.Location = new System.Drawing.Point(43, 392);
+            this.radio_bank.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.radio_bank.CheckedState.BorderThickness = 0;
+            this.radio_bank.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.radio_bank.CheckedState.InnerColor = System.Drawing.Color.White;
+            this.radio_bank.Location = new System.Drawing.Point(16, 392);
             this.radio_bank.Name = "radio_bank";
-            this.radio_bank.Size = new System.Drawing.Size(69, 20);
-            this.radio_bank.TabIndex = 62;
-            this.radio_bank.Text = "Bank QR";
+            this.radio_bank.Size = new System.Drawing.Size(20, 20);
+            this.radio_bank.TabIndex = 60;
+            this.radio_bank.Text = "guna2CustomRadioButton2";
+            this.radio_bank.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.radio_bank.UncheckedState.BorderThickness = 2;
+            this.radio_bank.UncheckedState.FillColor = System.Drawing.Color.Transparent;
+            this.radio_bank.UncheckedState.InnerColor = System.Drawing.Color.Transparent;
             // 
             // radio_cash
             // 
-            this.radio_cash.AutoSize = true;
-            this.radio_cash.Location = new System.Drawing.Point(42, 352);
+            this.radio_cash.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.radio_cash.CheckedState.BorderThickness = 0;
+            this.radio_cash.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.radio_cash.CheckedState.InnerColor = System.Drawing.Color.White;
+            this.radio_cash.Location = new System.Drawing.Point(16, 352);
             this.radio_cash.Name = "radio_cash";
-            this.radio_cash.Size = new System.Drawing.Size(42, 20);
-            this.radio_cash.TabIndex = 61;
-            this.radio_cash.Text = "Cash";
-            // 
-            // rad_bank
-            // 
-            this.rad_bank.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.rad_bank.CheckedState.BorderThickness = 0;
-            this.rad_bank.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.rad_bank.CheckedState.InnerColor = System.Drawing.Color.White;
-            this.rad_bank.Location = new System.Drawing.Point(16, 392);
-            this.rad_bank.Name = "rad_bank";
-            this.rad_bank.Size = new System.Drawing.Size(20, 20);
-            this.rad_bank.TabIndex = 60;
-            this.rad_bank.Text = "guna2CustomRadioButton2";
-            this.rad_bank.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-            this.rad_bank.UncheckedState.BorderThickness = 2;
-            this.rad_bank.UncheckedState.FillColor = System.Drawing.Color.Transparent;
-            this.rad_bank.UncheckedState.InnerColor = System.Drawing.Color.Transparent;
-            // 
-            // rd_cash
-            // 
-            this.rd_cash.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.rd_cash.CheckedState.BorderThickness = 0;
-            this.rd_cash.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.rd_cash.CheckedState.InnerColor = System.Drawing.Color.White;
-            this.rd_cash.Location = new System.Drawing.Point(16, 352);
-            this.rd_cash.Name = "rd_cash";
-            this.rd_cash.Size = new System.Drawing.Size(20, 20);
-            this.rd_cash.TabIndex = 59;
-            this.rd_cash.Text = "guna2CustomRadioButton1";
-            this.rd_cash.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-            this.rd_cash.UncheckedState.BorderThickness = 2;
-            this.rd_cash.UncheckedState.FillColor = System.Drawing.Color.Transparent;
-            this.rd_cash.UncheckedState.InnerColor = System.Drawing.Color.Transparent;
+            this.radio_cash.Size = new System.Drawing.Size(20, 20);
+            this.radio_cash.TabIndex = 59;
+            this.radio_cash.Text = "guna2CustomRadioButton1";
+            this.radio_cash.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.radio_cash.UncheckedState.BorderThickness = 2;
+            this.radio_cash.UncheckedState.FillColor = System.Drawing.Color.Transparent;
+            this.radio_cash.UncheckedState.InnerColor = System.Drawing.Color.Transparent;
             // 
             // label8
             // 
@@ -376,10 +377,10 @@
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Roboto SemiCondensed", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.Location = new System.Drawing.Point(581, 131);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(67, 28);
+            this.label11.Size = new System.Drawing.Size(81, 29);
             this.label11.TabIndex = 44;
             this.label11.Text = "Order";
             // 
@@ -396,7 +397,7 @@
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Roboto Light", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label12.Location = new System.Drawing.Point(582, 197);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(136, 22);
@@ -406,7 +407,7 @@
             // label13
             // 
             this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Roboto Light", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label13.Location = new System.Drawing.Point(815, 197);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(85, 22);
@@ -416,40 +417,40 @@
             // lb_pname
             // 
             this.lb_pname.AutoSize = true;
-            this.lb_pname.Font = new System.Drawing.Font("Roboto Light", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_pname.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_pname.Location = new System.Drawing.Point(594, 228);
             this.lb_pname.Name = "lb_pname";
-            this.lb_pname.Size = new System.Drawing.Size(103, 18);
+            this.lb_pname.Size = new System.Drawing.Size(104, 18);
             this.lb_pname.TabIndex = 48;
             this.lb_pname.Text = "Loading Name";
             // 
             // lb_quantity
             // 
             this.lb_quantity.AutoSize = true;
-            this.lb_quantity.Font = new System.Drawing.Font("Roboto Light", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_quantity.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_quantity.Location = new System.Drawing.Point(829, 228);
             this.lb_quantity.Name = "lb_quantity";
-            this.lb_quantity.Size = new System.Drawing.Size(117, 18);
+            this.lb_quantity.Size = new System.Drawing.Size(118, 18);
             this.lb_quantity.TabIndex = 49;
             this.lb_quantity.Text = "Loading Quantity";
             // 
             // lb_price
             // 
             this.lb_price.AutoSize = true;
-            this.lb_price.Font = new System.Drawing.Font("Roboto Light", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_price.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_price.Location = new System.Drawing.Point(594, 296);
             this.lb_price.Name = "lb_price";
-            this.lb_price.Size = new System.Drawing.Size(96, 18);
+            this.lb_price.Size = new System.Drawing.Size(98, 18);
             this.lb_price.TabIndex = 50;
             this.lb_price.Text = "Loading Price";
             // 
             // label17
             // 
             this.label17.AutoSize = true;
-            this.label17.Font = new System.Drawing.Font("Roboto Light", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label17.Location = new System.Drawing.Point(582, 268);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(54, 22);
+            this.label17.Size = new System.Drawing.Size(56, 22);
             this.label17.TabIndex = 51;
             this.label17.Text = "Price";
             // 
@@ -466,10 +467,10 @@
             // lb_totalPrice
             // 
             this.lb_totalPrice.AutoSize = true;
-            this.lb_totalPrice.Font = new System.Drawing.Font("Roboto SemiCondensed", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_totalPrice.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_totalPrice.Location = new System.Drawing.Point(581, 368);
             this.lb_totalPrice.Name = "lb_totalPrice";
-            this.lb_totalPrice.Size = new System.Drawing.Size(200, 28);
+            this.lb_totalPrice.Size = new System.Drawing.Size(242, 29);
             this.lb_totalPrice.TabIndex = 53;
             this.lb_totalPrice.Text = "Loading Total Price";
             // 
@@ -478,7 +479,7 @@
             this.lb_dateOrder.AutoSize = true;
             this.lb_dateOrder.Location = new System.Drawing.Point(661, 136);
             this.lb_dateOrder.Name = "lb_dateOrder";
-            this.lb_dateOrder.Size = new System.Drawing.Size(160, 22);
+            this.lb_dateOrder.Size = new System.Drawing.Size(165, 22);
             this.lb_dateOrder.TabIndex = 54;
             this.lb_dateOrder.Text = "Loading Order date";
             // 
@@ -505,7 +506,7 @@
             this.Controls.Add(this.btn_proceedPayment);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.guna2Panel1);
-            this.Font = new System.Drawing.Font("Roboto Light", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frm_uPayment";
@@ -541,10 +542,10 @@
         private System.Windows.Forms.Label label5;
         private Guna.UI2.WinForms.Guna2TextBox txt_address;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label radio_bank;
-        private System.Windows.Forms.Label radio_cash;
-        private Guna.UI2.WinForms.Guna2CustomRadioButton rad_bank;
-        private Guna.UI2.WinForms.Guna2CustomRadioButton rd_cash;
+        private System.Windows.Forms.Label lbbank;
+        private System.Windows.Forms.Label lbcash;
+        private Guna.UI2.WinForms.Guna2CustomRadioButton radio_bank;
+        private Guna.UI2.WinForms.Guna2CustomRadioButton radio_cash;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label11;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel2;

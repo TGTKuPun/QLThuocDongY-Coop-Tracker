@@ -97,25 +97,25 @@ namespace GUI
             grd.AutoGenerateColumns = false;
 
             DataGridViewTextBoxColumn col_oid = new DataGridViewTextBoxColumn();
-            col_oid.Name = "id_donhang";
+            col_oid.Name = "id_order";
             col_oid.HeaderText = "Order ID"; 
             col_oid.DataPropertyName = "ORDER_ID"; 
             grd.Columns.Add(col_oid);
 
             DataGridViewTextBoxColumn col_date = new DataGridViewTextBoxColumn();
-            col_date.Name = "ngaymua";
+            col_date.Name = "order_date";
             col_date.HeaderText = "Order Date";
             col_date.DataPropertyName = "ORDER_DATE";
             grd.Columns.Add(col_date);
 
             DataGridViewTextBoxColumn col_status = new DataGridViewTextBoxColumn();
-            col_status.Name = "trangthai";
+            col_status.Name = "Status";
             col_status.HeaderText = "Status"; 
             col_status.DataPropertyName = "STATUS"; 
             grd.Columns.Add(col_status);
 
             DataGridViewTextBoxColumn col_total = new DataGridViewTextBoxColumn();
-            col_total.Name = "tongtien";
+            col_total.Name = "total_price";
             col_total.HeaderText = "Total"; 
             col_total.DataPropertyName = "TOTAL"; 
             grd.Columns.Add(col_total);
@@ -177,7 +177,7 @@ namespace GUI
         {
             if (grd.SelectedRows.Count > 0)
             {
-                string orderId = grd.SelectedRows[0].Cells["id_donhang"].Value?.ToString();
+                string orderId = grd.SelectedRows[0].Cells["id_order"].Value?.ToString();
 
                 DialogResult result = MessageBox.Show("Bạn có chắc muốn hủy đơn hàng này không?", "Xác nhận", MessageBoxButtons.YesNo);
                 if (result == DialogResult.Yes)
@@ -185,7 +185,6 @@ namespace GUI
                     if (bus_uMenu.cancelOrder(orderId))
                     {
                         MessageBox.Show("Đơn hàng đã được hủy.");
-                        loadOrderData();
                     }
                     else
                     {
@@ -197,14 +196,14 @@ namespace GUI
             {
                 MessageBox.Show("Vui lòng chọn một đơn hàng.");
             }
-
+            loadOrderData();
         }
 
         private void btn_editOrder_Click(object sender, EventArgs e)
         {
             if (grd.SelectedRows.Count > 0)
             {
-                string orderId = grd.SelectedRows[0].Cells["id_donhang"].Value?.ToString();
+                string orderId = grd.SelectedRows[0].Cells["id_order"].Value?.ToString();
                 string oldPhone = grd.SelectedRows[0].Cells["phone"].Value?.ToString();
                 string oldAddress = grd.SelectedRows[0].Cells["detail_address"].Value?.ToString();
 
@@ -220,7 +219,6 @@ namespace GUI
                 if (bus_uMenu.updateOrder(orderId, newPhone, newAddress))
                 {
                     MessageBox.Show("Update Order Successfully!");
-                    loadOrderData();
                 }
                 else
                 {
@@ -231,6 +229,7 @@ namespace GUI
             {
                 MessageBox.Show("Please, choose at least 1 order to update.");
             }
+            loadOrderData();
         }
 
         private void lb_signOut_Click(object sender, EventArgs e)

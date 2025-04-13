@@ -45,9 +45,11 @@
   <ItemGroup>
     <Compile Include="BUS_FormChangePass.cs" />
     <Compile Include="BUS_FormLogin.cs" />
+    <Compile Include="BUS_FormProduct.cs" />
     <Compile Include="BUS_FormUser.cs" />
     <Compile Include="BUS_uMenu.cs" />
     <Compile Include="BUS_uOrder.cs" />
+    <Compile Include="BUS_uPayment.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

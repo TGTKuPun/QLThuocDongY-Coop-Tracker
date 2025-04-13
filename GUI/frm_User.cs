@@ -69,7 +69,7 @@ namespace GUI
             grd.Columns.Add(col_id);
 
             DataGridViewTextBoxColumn col_hoten = new DataGridViewTextBoxColumn();
-            col_hoten.Name = "hoten";
+            col_hoten.Name = "FullName";
             col_hoten.HeaderText = "Full Name";
             col_hoten.DataPropertyName = "FULLNAME"; // Tên cột trong DTO_FormUser
             grd.Columns.Add(col_hoten);
@@ -87,7 +87,7 @@ namespace GUI
             grd.Columns.Add(col_email);
 
             DataGridViewColumn col_pass = new DataGridViewTextBoxColumn();
-            col_pass.Name = "password";
+            col_pass.Name = "Pass";
             col_pass.HeaderText = "Password"; // Tên tiêu đề cho cột trong DataGridView
             col_pass.DataPropertyName = "PASSWORD"; // Tên cột trong DTO_FormUser
             col_pass.Visible = false;
@@ -108,13 +108,13 @@ namespace GUI
             txt_id.ReadOnly = true;
             grd.AutoGenerateColumns = false;
             grd.DataSource = userList;
-        }
+        }   
         public void enable(Guna2GroupBox grp, bool b)
         {
             foreach (Control ctrl in grp.Controls)
             {
                 /*To exclude btn_Exit for being false*/
-                if (ctrl != btn_Exit)
+                if (ctrl != btn_Exit && ctrl != lb_goback)
                 {
                     ctrl.Enabled = b;
                 }
@@ -223,7 +223,7 @@ namespace GUI
                 DataGridViewRow row = grd.Rows[e.RowIndex];
 
                 txt_id.Text = row.Cells["id_user"].Value?.ToString();
-                txt_fullname.Text = row.Cells["hoten"].Value?.ToString();
+                txt_fullname.Text = row.Cells["FullName"].Value?.ToString();
                 txt_username.Text = row.Cells["username"].Value?.ToString();
                 txt_email.Text = row.Cells["email"].Value?.ToString();
 
@@ -285,7 +285,7 @@ namespace GUI
                 if (!row.IsNewRow)
                 {
                     string userId = row.Cells["id_user"].Value.ToString();
-                    string fullName = row.Cells["hoten"].Value.ToString();
+                    string fullName = row.Cells["FullName"].Value.ToString();
                     string username = row.Cells["username"].Value.ToString();
                     string email = row.Cells["email"].Value.ToString();
 
@@ -402,6 +402,13 @@ namespace GUI
         private void grd_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
+        }
+
+        private void lb_goback_Click(object sender, EventArgs e)
+        {
+            frm_Menu menu = new frm_Menu("", "");
+            this.Hide();
+            menu.ShowDialog();
         }
     }
 }

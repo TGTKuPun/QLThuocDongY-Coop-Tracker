@@ -21,11 +21,11 @@ namespace BUS
 
             foreach (DataRow row in dt.Rows)
             {
-                string pid = row["id_thuoc"].ToString();
-                string pname = row["ten_thuoc"].ToString();
-                int price = Convert.ToInt32(row["gia_thuoc"]); 
-                string unit = row["donvitinh"].ToString();
-                float quantity = Convert.ToSingle(row["soluong"]); 
+                string pid = row["id_product"].ToString();
+                string pname = row["Product_Name"].ToString();
+                int price = Convert.ToInt32(row["Prices"]); 
+                string unit = row["Type"].ToString();
+                float quantity = Convert.ToSingle(row["Quantity"]); 
 
                 DTO_uOrder product = new DTO_uOrder(pid, pname, price, unit, quantity);
                 productList.Add(product);

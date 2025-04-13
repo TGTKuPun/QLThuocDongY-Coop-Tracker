@@ -47,9 +47,11 @@
     <Compile Include="Connection.cs" />
     <Compile Include="DAL_FormChangePass.cs" />
     <Compile Include="DAL_FormLogin.cs" />
+    <Compile Include="DAL_FormProduct.cs" />
     <Compile Include="DAL_FormUser.cs" />
     <Compile Include="DAL_uMenu.cs" />
     <Compile Include="DAL_uOrder.cs" />
+    <Compile Include="DAL_uPayment.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

@@ -14,13 +14,13 @@ namespace DAL
 
         public DataTable getUser()
         {
-            string sql = "SELECT RTRIM(id_user) AS id_user, hoten, username, RTRIM(email) AS email, matkhau FROM tb_useraccount";
+            string sql = "SELECT RTRIM(id_user) AS id_user, FullName, username, RTRIM(email) AS email, Pass FROM tb_useraccount";
             return Connection.selectQuery(sql);
         }
 
         public void addUser(DTO_FormUser user)
         {
-            string sql = string.Format("INSERT INTO tb_useraccount(id_user, hoten, username, email, matkhau) VALUES(N'{0}', N'{1}', N'{2}', N'{3}', N'{4}')",
+            string sql = string.Format("INSERT INTO tb_useraccount(id_user, FullName, username, email, Pass) VALUES(N'{0}', N'{1}', N'{2}', N'{3}', N'{4}')",
                 user.USERID, user.FULLNAME, user.USERNAME, user.EMAIL, user.PASSWORD);
             Connection.actionQuery(sql);
         }
@@ -50,7 +50,7 @@ namespace DAL
 
         public void updateUser(DTO_FormUser user)
         {
-            string sql = string.Format("UPDATE tb_useraccount SET hoten = N'{1}', username = N'{2}', email = N'{3}' WHERE id_user = N'{0}'",
+            string sql = string.Format("UPDATE tb_useraccount SET FullName = N'{1}', username = N'{2}', email = N'{3}' WHERE id_user = N'{0}'",
                                         user.USERID, user.FULLNAME, user.USERNAME, user.EMAIL);
             Connection.actionQuery(sql);
         }

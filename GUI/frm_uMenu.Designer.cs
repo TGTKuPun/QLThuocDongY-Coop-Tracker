@@ -65,11 +65,11 @@
             // btn_editOrder
             // 
             this.btn_editOrder.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(98)))), ((int)(((byte)(115)))));
-            this.btn_editOrder.Font = new System.Drawing.Font("Roboto SemiCondensed", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_editOrder.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_editOrder.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(247)))), ((int)(((byte)(251)))));
-            this.btn_editOrder.Location = new System.Drawing.Point(-19, 239);
+            this.btn_editOrder.Location = new System.Drawing.Point(0, 239);
             this.btn_editOrder.Name = "btn_editOrder";
-            this.btn_editOrder.Size = new System.Drawing.Size(192, 49);
+            this.btn_editOrder.Size = new System.Drawing.Size(173, 49);
             this.btn_editOrder.TabIndex = 7;
             this.btn_editOrder.Text = "Update Order";
             this.btn_editOrder.UseVisualStyleBackColor = false;
@@ -78,11 +78,11 @@
             // btn_cancelOrder
             // 
             this.btn_cancelOrder.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(43)))), ((int)(((byte)(41)))));
-            this.btn_cancelOrder.Font = new System.Drawing.Font("Roboto SemiCondensed", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_cancelOrder.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_cancelOrder.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(247)))), ((int)(((byte)(251)))));
-            this.btn_cancelOrder.Location = new System.Drawing.Point(-19, 193);
+            this.btn_cancelOrder.Location = new System.Drawing.Point(0, 193);
             this.btn_cancelOrder.Name = "btn_cancelOrder";
-            this.btn_cancelOrder.Size = new System.Drawing.Size(192, 49);
+            this.btn_cancelOrder.Size = new System.Drawing.Size(173, 49);
             this.btn_cancelOrder.TabIndex = 6;
             this.btn_cancelOrder.Text = "Cancel Order";
             this.btn_cancelOrder.UseVisualStyleBackColor = false;
@@ -91,11 +91,11 @@
             // btn_placeOrder
             // 
             this.btn_placeOrder.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(98)))), ((int)(((byte)(115)))));
-            this.btn_placeOrder.Font = new System.Drawing.Font("Roboto SemiCondensed", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_placeOrder.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_placeOrder.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(247)))), ((int)(((byte)(251)))));
-            this.btn_placeOrder.Location = new System.Drawing.Point(-19, 147);
+            this.btn_placeOrder.Location = new System.Drawing.Point(0, 147);
             this.btn_placeOrder.Name = "btn_placeOrder";
-            this.btn_placeOrder.Size = new System.Drawing.Size(192, 49);
+            this.btn_placeOrder.Size = new System.Drawing.Size(173, 49);
             this.btn_placeOrder.TabIndex = 3;
             this.btn_placeOrder.Text = "Place Order";
             this.btn_placeOrder.UseVisualStyleBackColor = false;
@@ -105,11 +105,11 @@
             // 
             this.lb_signOut.AutoSize = true;
             this.lb_signOut.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(247)))), ((int)(((byte)(251)))));
-            this.lb_signOut.Font = new System.Drawing.Font("Roboto SemiCondensed", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_signOut.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_signOut.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(98)))), ((int)(((byte)(115)))));
             this.lb_signOut.Location = new System.Drawing.Point(4, 577);
             this.lb_signOut.Name = "lb_signOut";
-            this.lb_signOut.Size = new System.Drawing.Size(95, 28);
+            this.lb_signOut.Size = new System.Drawing.Size(114, 29);
             this.lb_signOut.TabIndex = 2;
             this.lb_signOut.Text = "Sign Out";
             this.lb_signOut.Click += new System.EventHandler(this.lb_signOut_Click);
@@ -119,7 +119,7 @@
             this.lb_userID.AutoSize = true;
             this.lb_userID.Location = new System.Drawing.Point(33, 101);
             this.lb_userID.Name = "lb_userID";
-            this.lb_userID.Size = new System.Drawing.Size(168, 22);
+            this.lb_userID.Size = new System.Drawing.Size(178, 22);
             this.lb_userID.TabIndex = 1;
             this.lb_userID.Text = "USER ID: Loading ID";
             // 
@@ -152,11 +152,11 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Roboto SemiCondensed", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(247)))), ((int)(((byte)(251)))));
             this.label3.Location = new System.Drawing.Point(525, 21);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(260, 44);
+            this.label3.Size = new System.Drawing.Size(316, 42);
             this.label3.TabIndex = 2;
             this.label3.Text = "LIST OF ORDER";
             // 
@@ -168,7 +168,7 @@
             this.btn_exit.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btn_exit.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btn_exit.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(98)))), ((int)(((byte)(115)))));
-            this.btn_exit.Font = new System.Drawing.Font("Roboto SemiCondensed", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_exit.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_exit.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(3)))), ((int)(((byte)(3)))));
             this.btn_exit.Image = ((System.Drawing.Image)(resources.GetObject("btn_exit.Image")));
             this.btn_exit.Location = new System.Drawing.Point(1033, -9);
@@ -193,7 +193,7 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.grd);
             this.Controls.Add(this.btn_changePassword);
-            this.Font = new System.Drawing.Font("Roboto Light", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frm_uMenu";

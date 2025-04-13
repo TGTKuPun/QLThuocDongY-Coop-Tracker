@@ -13,7 +13,7 @@ namespace DAL
     {
         public DTO_FormLogin checkLogin(string username, string password)
         {
-            string sql = $"SELECT * FROM tb_useraccount WHERE username = '{username}' AND matkhau = '{password}'";
+            string sql = $"SELECT * FROM tb_useraccount WHERE username = '{username}' AND Pass = '{password}'";
             DataTable dt = Connection.selectQuery(sql);
 
             if (dt.Rows.Count > 0)
@@ -22,7 +22,7 @@ namespace DAL
                 return new DTO_FormLogin(
                     dt.Rows[0]["id_user"].ToString().Trim(),
                     dt.Rows[0]["username"].ToString().Trim(),
-                    dt.Rows[0]["matkhau"].ToString().Trim(),
+                    dt.Rows[0]["Pass"].ToString().Trim(),
                     dt.Rows[0]["email"].ToString().Trim()
                 );
             }

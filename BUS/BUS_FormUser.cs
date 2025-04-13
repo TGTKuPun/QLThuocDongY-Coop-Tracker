@@ -22,10 +22,10 @@ namespace BUS
             {
                 DTO_FormUser user = new DTO_FormUser(
                     row["id_user"].ToString(),
-                    row["hoten"].ToString(),
+                    row["FullName"].ToString(),
                     row["username"].ToString(),
                     row["email"].ToString(),
-                    row["matkhau"].ToString());
+                    row["Pass"].ToString());
                 userList.Add(user);
             }
             return userList;

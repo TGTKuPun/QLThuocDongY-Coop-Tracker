@@ -1,3 +1,0 @@
-windows
-DESKTOP-RCOTNC5\SQLEXPRESS
-db_QLThuocDongY
